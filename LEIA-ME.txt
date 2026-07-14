@@ -28,7 +28,7 @@
   document.documentElement.style.setProperty('--visual-height',h+'px');
 })();
 </script>
-<title>JB3D Vendas v3.5</title>
+<title>JB3D Vendas v3.6</title>
 <style>
     :root {
       --bg:#080d18; --panel:#101827; --panel2:#151f31; --line:#253149; --text:#f4f7fb;
@@ -377,7 +377,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 @media(max-width:520px){.daily-update-card{grid-template-columns:1fr}.daily-update-action{text-align:left;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:center}.daily-update-action b{grid-row:1/3}.daily-update-action .button{grid-column:1/-1;margin-top:5px}.funnel-rates{grid-template-columns:1fr}.chart-switcher{padding-bottom:3px}}
 
 
-/* ===== v3.5 — QR sequencial ilimitado ===== */
+/* ===== v3.6 — sincronização confirmada dentro de Importar ===== */
 .sync-hero{padding:16px;border-radius:20px;background:linear-gradient(145deg,rgba(56,232,198,.12),rgba(82,168,255,.07));border:1px solid rgba(56,232,198,.2);margin-bottom:13px}
 .sync-hero-top{display:grid;grid-template-columns:50px minmax(0,1fr);gap:12px;align-items:center}.sync-hero-icon{display:grid;place-items:center;width:50px;height:50px;border-radius:17px;background:linear-gradient(145deg,var(--accent),var(--accent2));color:#06131b;font-weight:950;font-size:22px;box-shadow:0 12px 28px rgba(56,232,198,.2)}.sync-hero strong{display:block;font-size:15px}.sync-hero p{margin:5px 0 0;color:var(--muted);font-size:10px;line-height:1.5}
 .sync-device-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:12px}.sync-device-grid>div{padding:10px;border-radius:13px;background:rgba(5,13,24,.42);border:1px solid rgba(132,158,198,.12);min-width:0}.sync-device-grid small{display:block;color:var(--muted);font-size:8px}.sync-device-grid b{display:block;margin-top:5px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -391,6 +391,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 .qr-scanner-sheet{max-width:560px}.qr-scan-stage{position:relative;overflow:hidden;border-radius:18px;background:#03070c;aspect-ratio:1/1;margin-top:12px}.qr-scan-stage video{width:100%;height:100%;object-fit:cover;display:block}.qr-scan-frame{position:absolute;inset:15%;border:2px solid var(--accent);border-radius:20px;box-shadow:0 0 0 999px rgba(0,0,0,.34),0 0 28px rgba(56,232,198,.3)}.qr-scan-frame:after{content:"";position:absolute;left:8%;right:8%;top:10%;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);animation:qrScanLine 2s ease-in-out infinite}.qr-camera-message{position:absolute;left:12px;right:12px;bottom:12px;padding:9px;border-radius:11px;background:rgba(4,10,18,.78);color:#dcecff;font-size:9px;text-align:center;backdrop-filter:blur(8px)}@keyframes qrScanLine{0%,100%{transform:translateY(0)}50%{transform:translateY(240px)}}
 .qr-manual-box{margin-top:12px}.qr-manual-box textarea{width:100%;min-height:88px;border:1px solid var(--line);border-radius:13px;background:#07111e;color:var(--text);padding:10px;font-size:9px}.qr-modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.hidden-sync-file{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 .sync-qr-pager{display:grid;grid-template-columns:42px minmax(0,1fr) 42px;gap:8px;align-items:center;margin-top:9px}.sync-qr-page-btn{height:40px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035);color:var(--text);font-size:22px}.sync-qr-page-btn:disabled{opacity:.35}.sync-qr-page-copy{text-align:center}.sync-qr-page-copy b{display:block;font-size:12px;color:var(--accent)}.sync-qr-page-copy small{display:block;margin-top:3px;color:var(--muted);font-size:8px}.sync-auto-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;color:var(--muted);font-size:9px}.sync-auto-row input{accent-color:var(--accent)}.sync-multi-note{margin-top:8px;padding:9px;border-radius:12px;background:rgba(56,232,198,.07);border:1px solid rgba(56,232,198,.14);color:#d7f8f1;font-size:9px;line-height:1.45}.qr-multi-progress{margin-top:10px;padding:10px;border-radius:14px;background:rgba(56,232,198,.08);border:1px solid rgba(56,232,198,.18)}.qr-multi-progress[hidden]{display:none}.qr-multi-progress-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.qr-multi-progress-head strong{font-size:11px}.qr-multi-progress-head span{font-size:10px;color:var(--accent);font-weight:900}.qr-part-dots{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;max-height:58px;overflow:auto}.qr-part-dot{width:9px;height:9px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1)}.qr-part-dot.done{background:var(--good);border-color:var(--good);box-shadow:0 0 8px rgba(72,215,137,.35)}.qr-part-dot.current{outline:2px solid var(--accent2);outline-offset:2px}.sync-qr-box{position:relative}.sync-part-badge{position:absolute;top:8px;right:8px;z-index:3;padding:5px 8px;border-radius:99px;background:rgba(6,21,33,.86);color:#fff;font-size:8px;font-weight:900;box-shadow:0 5px 14px rgba(0,0,0,.2)}
+.sync-confirm-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:14px 0}.sync-confirm-summary>div{padding:11px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);min-width:0}.sync-confirm-summary small{display:block;color:var(--muted);font-size:8px}.sync-confirm-summary b{display:block;margin-top:5px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sync-confirm-choice{display:grid;gap:8px;margin-top:12px}.sync-confirm-choice label{display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025);cursor:pointer}.sync-confirm-choice input{margin-top:2px;accent-color:var(--accent)}.sync-confirm-choice strong{display:block;font-size:11px}.sync-confirm-choice small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.45}.sync-confirm-banner{padding:12px;border-radius:15px;background:linear-gradient(135deg,rgba(56,232,198,.11),rgba(82,168,255,.07));border:1px solid rgba(56,232,198,.18);margin-top:12px}.sync-confirm-banner strong{display:block;font-size:12px}.sync-confirm-banner small{display:block;margin-top:5px;color:var(--muted);font-size:9px;line-height:1.45}.sync-confirm-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.sync-confirm-actions .primary{grid-column:1/-1}.sync-confirm-actions .button{padding:12px 10px;font-size:10px}@media(max-width:460px){.sync-confirm-summary{grid-template-columns:1fr 1fr}.sync-confirm-summary>div:last-child{grid-column:1/-1}.sync-confirm-actions{grid-template-columns:1fr}.sync-confirm-actions .primary{grid-column:auto}}
 @media(max-width:720px){.sync-choice-grid,.sync-options{grid-template-columns:1fr}.sync-qr-wrap{grid-template-columns:1fr}.sync-qr-box{min-height:240px}.sync-guide{grid-template-columns:1fr}.sync-device-grid,.sync-received-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.sync-actions{grid-template-columns:1fr 1fr}}
 @media(max-width:390px){.sync-device-grid,.sync-received-grid{grid-template-columns:1fr 1fr}.sync-device-grid>div:last-child,.sync-received-grid>div:last-child{grid-column:1/-1}.sync-actions{grid-template-columns:1fr}.sync-actions .button.full-row{grid-column:auto}}
 </style>
@@ -463,7 +464,6 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 <button class="section-tab" data-growth-section="audit"><span>★</span>Auditoria</button>
 <button class="section-tab" data-growth-section="responses"><span>✉</span>Respostas</button>
 <button class="section-tab" data-growth-section="backup"><span>☁</span>Backup</button>
-<button class="section-tab" data-growth-section="sync"><span>▦</span>Sincronizar</button>
 </div>
 <div class="growth-pane active" id="growth-pane-today"><div id="todayCenter"></div></div>
 <div class="growth-pane" id="growth-pane-compare"><div id="comparisonCenter"></div></div>
@@ -473,13 +473,13 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 <div class="growth-pane" id="growth-pane-audit"><div id="auditCenter"></div></div>
 <div class="growth-pane" id="growth-pane-responses"><div id="responseCenter"></div></div>
 <div class="growth-pane" id="growth-pane-backup"><div id="backupCenter"></div></div>
-<div class="growth-pane" id="growth-pane-sync"><div id="syncCenter"></div></div>
 </section>
 <section class="screen" id="screen-imports">
 <div class="screen-title"><div><span>DADOS DA SHOPEE</span><h1>Importar</h1></div><div class="mini-status"><b id="reportCountTop">0</b><span>arquivos</span></div></div>
-<div class="section-tabs two" data-tab-group="imports">
+<div class="section-tabs three" data-tab-group="imports">
 <button class="section-tab active" data-ui-section="imports:upload"><span>＋</span>Novo envio</button>
 <button class="section-tab" data-ui-section="imports:files"><span>▤</span>Meus arquivos</button>
+<button class="section-tab" data-ui-section="imports:sync"><span>▦</span>Sincronizar</button>
 </div>
 <div class="ui-pane active" id="imports-pane-upload">
 <section class="upload-card app-card">
@@ -495,6 +495,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 <div class="ui-pane" id="imports-pane-files">
 <section class="panel app-panel"><div class="panel-head"><div><small class="eyebrow">HISTÓRICO</small><h2>Arquivos importados</h2></div><span id="reportCount">0 arquivos</span></div><div id="reportList"></div></section>
 </div>
+<div class="ui-pane" id="imports-pane-sync"><div id="syncCenter"></div></div>
 </section>
 <section class="screen" id="screen-price">
 <div class="screen-title"><div><span>PRODUTOS E MARGEM</span><h1>Produtos</h1></div><button class="circle-action" data-price-section="calculator" aria-label="Calculadora">R$</button></div>
@@ -1883,7 +1884,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 (() => {
   'use strict';
 
-  const APP_VERSION = '3.5.0';
+  const APP_VERSION = '3.6.0';
   const STORAGE_REPORTS = 'jb3d_vendas_reports_v2';
   const STORAGE_SETTINGS = 'jb3d_vendas_settings_v1';
   const STORAGE_AD = 'jb3d_vendas_ad_v1';
@@ -1920,7 +1921,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     cameraStream: null, scanFrame: 0, scanBusy: false, detector: null, receivedPayload: null,
     receiveBuffer: null, sentBytes: 0, totalBytes: 0, lastPeer: '', sending: false,
     signalParts: [], signalPartIndex: 0, signalAuto: true, signalAutoTimer: 0,
-    qrAssembly: null, lastScannedCode: '', lastScannedAt: 0
+    qrAssembly: null, lastScannedCode: '', lastScannedAt: 0, pendingSignal: null, confirmKind: ''
   };
 
   let deferredInstallPrompt = null;
@@ -4998,7 +4999,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     const latest = state.reports.map(r => Date.parse(r.importedAt || 0)).filter(Number.isFinite).sort((a,b)=>b-a)[0];
     host.innerHTML = `
       <section class="panel app-panel">
-        <div class="panel-head app-panel-head"><div><small class="eyebrow">SEM NUVEM</small><h2>Sincronizar dispositivos</h2></div><span class="soft-badge">QRs sequenciais + rede</span></div>
+        <div class="panel-head app-panel-head"><div><small class="eyebrow">IMPORTAR ENTRE APARELHOS</small><h2>Sincronizar dispositivos</h2></div><span class="soft-badge">QRs sequenciais + rede</span></div>
         <div class="sync-hero"><div class="sync-hero-top"><div class="sync-hero-icon">▦</div><div><strong>Copie os dados diretamente entre celular, tablet e computador</strong><p>O pareamento é dividido automaticamente em vários QRs leves. Basta manter a câmera apontada enquanto eles trocam; depois os dados seguem por conexão direta, sem nuvem.</p></div></div><div class="sync-device-grid"><div><small>Este dispositivo</small><b>${escapeHtml(syncDeviceLabel())}</b></div><div><small>Relatórios</small><b>${number(state.reports.length)}</b></div><div><small>Custos</small><b>${number(costs)}</b></div></div></div>
         <div class="sync-choice-grid">
           <button class="sync-choice" id="syncStartSend"><span class="sync-choice-icon">↑</span><strong>Enviar meus dados</strong><small>Use neste aparelho quando ele possui a base mais atualizada.</small></button>
@@ -5015,9 +5016,9 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
           <div class="sync-actions" id="syncWaitingActions" hidden><button class="button secondary full-row" id="syncScanOtherWaiting">Ler QR do outro aparelho</button><button class="button ghost" id="syncPasteSignal">Colar código manualmente</button><button class="button danger" id="syncCancelWaiting">Cancelar</button></div>
           <div class="sync-received" id="syncReceivedPreview" hidden></div>
         </div>
-        <div class="footer-note" style="margin-top:11px">Última alteração importada: ${latest ? new Date(latest).toLocaleString('pt-BR') : 'nenhuma'}. Mantenha os dois aparelhos com o aplicativo aberto até a confirmação.</div>
+        <div class="footer-note" style="margin-top:11px">Última alteração importada: ${latest ? new Date(latest).toLocaleString('pt-BR') : 'nenhuma'}. Mantenha os dois aparelhos com o aplicativo aberto. Após cada leitura completa, confirme a próxima etapa na janela exibida.</div>
       </section>
-      <section class="panel app-panel"><div class="panel-head app-panel-head"><div><small class="eyebrow">COMO FUNCIONA</small><h2>Sincronização em 3 passos</h2></div></div><div class="sync-guide"><div class="sync-guide-step"><b>1</b><strong>Escolha quem envia</strong><small>No aparelho com os dados atualizados, toque em Enviar meus dados.</small></div><div class="sync-guide-step"><b>2</b><strong>Leia os dois QRs</strong><small>O aparelho que recebe mantém a câmera apontada e lê todos os QRs sequenciais. Depois mostra a resposta do mesmo modo.</small></div><div class="sync-guide-step"><b>3</b><strong>Confirme os dados</strong><small>O aparelho que recebe escolhe mesclar ou substituir e conclui a sincronização.</small></div></div></section>`;
+      <section class="panel app-panel"><div class="panel-head app-panel-head"><div><small class="eyebrow">COMO FUNCIONA</small><h2>Sincronização em 3 passos</h2></div></div><div class="sync-guide"><div class="sync-guide-step"><b>1</b><strong>Escolha quem envia</strong><small>No aparelho com os dados atualizados, toque em Enviar meus dados.</small></div><div class="sync-guide-step"><b>2</b><strong>Leia os dois QRs</strong><small>O aparelho que recebe mantém a câmera apontada e lê todos os QRs sequenciais. Depois mostra a resposta do mesmo modo.</small></div><div class="sync-guide-step"><b>3</b><strong>Confirme os dados</strong><small>Após ler todos os QRs, uma janela confirma se deseja mesclar, substituir ou cancelar.</small></div></div></section>`;
     updateSyncSessionUi();
   }
 
@@ -5084,10 +5085,118 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     Object.assign(syncRuntime, {
       role: null, sessionId: null, signalCode: '', status: 'idle', message: '', progress: 0,
       receivedPayload: null, receiveBuffer: null, sentBytes: 0, totalBytes: 0, lastPeer: '', sending: false,
-      signalParts: [], signalPartIndex: 0, qrAssembly: null, lastScannedCode: '', lastScannedAt: 0
+      signalParts: [], signalPartIndex: 0, qrAssembly: null, lastScannedCode: '', lastScannedAt: 0, pendingSignal: null, confirmKind: ''
     });
     stopSyncQrRotation();
-    if (render && state.currentTab === 'growth' && state.growthSection === 'sync') renderSyncCenter();
+    if (render && state.currentTab === 'imports' && state.importsSection === 'sync') renderSyncCenter();
+  }
+
+
+  function ensureSyncConfirmModal() {
+    let modal = $('#syncConfirmModal');
+    if (modal) return modal;
+    modal = document.createElement('div');
+    modal.id = 'syncConfirmModal';
+    modal.className = 'product-modal';
+    modal.hidden = true;
+    modal.innerHTML = '<div class="product-modal-backdrop" data-close-sync-confirm></div><section class="product-modal-sheet" role="dialog" aria-modal="true"><div id="syncConfirmModalContent"></div></section>';
+    document.body.appendChild(modal);
+    return modal;
+  }
+
+  function closeSyncConfirmModal(clearPending = false) {
+    const modal = $('#syncConfirmModal');
+    if (!modal || modal.hidden) return;
+    modal.classList.remove('open');
+    document.body.classList.remove('modal-open');
+    setTimeout(() => { modal.hidden = true; }, 220);
+    if (clearPending) {
+      syncRuntime.pendingSignal = null;
+      syncRuntime.confirmKind = '';
+    }
+  }
+
+  function showSyncConfirmModal(html, kind) {
+    ensureSyncConfirmModal();
+    syncRuntime.confirmKind = kind || '';
+    const host = $('#syncConfirmModalContent');
+    if (host) host.innerHTML = html;
+    const modal = $('#syncConfirmModal');
+    modal.hidden = false;
+    requestAnimationFrame(() => modal.classList.add('open'));
+    document.body.classList.add('modal-open');
+  }
+
+  function openSyncSignalConfirmModal(signal) {
+    syncRuntime.pendingSignal = signal;
+    switchTab('imports');
+    setUiSection('imports', 'sync', false);
+    const peer = escapeHtml(signal.device || 'Outro dispositivo');
+    if (signal.type === 'offer') {
+      showSyncConfirmModal(`
+        <div class="modal-grabber"></div>
+        <div class="modal-head"><div><small>QRs lidos com sucesso</small><h2>Confirmar recebimento</h2></div><button class="modal-close" data-close-sync-confirm aria-label="Fechar">×</button></div>
+        <div class="sync-confirm-banner"><strong>Conexão encontrada</strong><small>O aparelho <b>${peer}</b> quer enviar a base do JB3D Vendas. Escolha agora como os dados deverão ser aplicados quando chegarem.</small></div>
+        <div class="sync-confirm-choice">
+          <label><input type="radio" name="syncConfirmReceiveMode" value="merge" ${syncRuntime.receiveMode !== 'replace' ? 'checked' : ''}><div><strong>Mesclar dados</strong><small>Mantém o que já existe e combina relatórios e custos, priorizando as versões mais recentes.</small></div></label>
+          <label><input type="radio" name="syncConfirmReceiveMode" value="replace" ${syncRuntime.receiveMode === 'replace' ? 'checked' : ''}><div><strong>Espelhar e substituir</strong><small>Apaga a base atual deste aparelho e deixa uma cópia idêntica ao aparelho que envia.</small></div></label>
+        </div>
+        <div class="sync-confirm-actions"><button class="button primary" id="syncConfirmSignalProceed">Confirmar e gerar resposta</button><button class="button ghost" data-close-sync-confirm>Cancelar</button></div>`, 'offer');
+      return;
+    }
+    const reports = state.reports.length;
+    const costs = Object.keys(state.productCosts || {}).length;
+    showSyncConfirmModal(`
+      <div class="modal-grabber"></div>
+      <div class="modal-head"><div><small>QRs lidos com sucesso</small><h2>Confirmar envio</h2></div><button class="modal-close" data-close-sync-confirm aria-label="Fechar">×</button></div>
+      <div class="sync-confirm-banner"><strong>Resposta recebida de ${peer}</strong><small>A conexão está pronta. Confirme para enviar a base deste aparelho.</small></div>
+      <div class="sync-confirm-summary"><div><small>Relatórios</small><b>${number(reports)}</b></div><div><small>Custos</small><b>${number(costs)}</b></div><div><small>Destino</small><b>${peer}</b></div></div>
+      <div class="sync-confirm-actions"><button class="button primary" id="syncConfirmSignalProceed">Confirmar e enviar dados</button><button class="button ghost" data-close-sync-confirm>Cancelar</button></div>`, 'answer');
+  }
+
+  async function confirmPendingSyncSignal() {
+    const signal = syncRuntime.pendingSignal;
+    if (!signal) return toast('Não há conexão pendente para confirmar.', 'error');
+    if (signal.type === 'offer') {
+      syncRuntime.receiveMode = document.querySelector('input[name="syncConfirmReceiveMode"]:checked')?.value === 'replace' ? 'replace' : 'merge';
+      const selector = $('#syncReceiveMode');
+      if (selector) selector.value = syncRuntime.receiveMode;
+    }
+    closeSyncConfirmModal(false);
+    syncSetStatus('preparing', signal.type === 'offer' ? 'Confirmação recebida. Gerando a resposta...' : 'Confirmação recebida. Conectando os dispositivos...');
+    try {
+      if (signal.type === 'offer') await acceptSyncOffer(signal);
+      else await acceptSyncAnswer(signal);
+      syncRuntime.pendingSignal = null;
+      syncRuntime.confirmKind = '';
+      toast(signal.type === 'offer' ? 'Resposta pronta. Mostre os QRs ao outro aparelho.' : 'Envio confirmado. Aguarde a conexão.', 'success');
+    } catch (error) {
+      syncRuntime.pendingSignal = null;
+      syncRuntime.confirmKind = '';
+      syncSetStatus('error', error.message || 'Não foi possível continuar a sincronização.');
+      toast(error.message || 'Falha ao confirmar a conexão.', 'error');
+    }
+  }
+
+  function openReceivedDataConfirmModal() {
+    const payload = syncRuntime.receivedPayload;
+    if (!payload) return;
+    switchTab('imports');
+    setUiSection('imports', 'sync', false);
+    const reports = Array.isArray(payload.reports) ? payload.reports.length : 0;
+    const costs = Object.keys(payload.productCosts || {}).length;
+    const responses = Array.isArray(payload.growth?.customResponses) ? payload.growth.customResponses.length : 0;
+    const source = escapeHtml(payload.sync?.source || syncRuntime.lastPeer || 'Outro dispositivo');
+    showSyncConfirmModal(`
+      <div class="modal-grabber"></div>
+      <div class="modal-head"><div><small>Transferência concluída</small><h2>Como aplicar os dados?</h2></div><button class="modal-close" data-close-sync-confirm aria-label="Fechar">×</button></div>
+      <div class="sync-confirm-banner"><strong>Base recebida de ${source}</strong><small>Nada será alterado até você confirmar uma das opções abaixo. Um ponto de restauração será criado automaticamente.</small></div>
+      <div class="sync-confirm-summary"><div><small>Relatórios</small><b>${number(reports)}</b></div><div><small>Custos</small><b>${number(costs)}</b></div><div><small>Respostas próprias</small><b>${number(responses)}</b></div></div>
+      <div class="sync-confirm-choice">
+        <label><input type="radio" name="syncApplyMode" value="merge" ${syncRuntime.receiveMode !== 'replace' ? 'checked' : ''}><div><strong>Mesclar com este aparelho</strong><small>Mantém os dados locais e combina a base recebida sem duplicar períodos equivalentes.</small></div></label>
+        <label><input type="radio" name="syncApplyMode" value="replace" ${syncRuntime.receiveMode === 'replace' ? 'checked' : ''}><div><strong>Substituir tudo</strong><small>Deixa este aparelho como uma cópia completa da base recebida.</small></div></label>
+      </div>
+      <div class="sync-confirm-actions"><button class="button primary" id="syncConfirmApplyData">Aplicar dados agora</button><button class="button ghost" id="syncConfirmLater">Revisar depois</button><button class="button danger" id="syncConfirmDiscardData">Descartar recebimento</button></div>`, 'data');
   }
 
   function setupSyncPeer(pc) {
@@ -5182,8 +5291,8 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
   async function handleSyncSignalCode(code) {
     try {
       const signal = decodeSyncSignal(code);
-      if (signal.type === 'offer') await acceptSyncOffer(signal);
-      else await acceptSyncAnswer(signal);
+      syncRuntime.pendingSignal = signal;
+      openSyncSignalConfirmModal(signal);
     } catch (error) {
       syncSetStatus('error', error.message || 'Não foi possível interpretar o QR.');
       toast(error.message || 'QR inválido.', 'error');
@@ -5272,6 +5381,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     syncRuntime.receivedPayload = payload;
     syncRuntime.receiveBuffer = null;
     syncSetStatus('review', `Base recebida de ${payload.sync?.source || buffer.source}. Confirme como aplicar.`, 100);
+    setTimeout(openReceivedDataConfirmModal, 120);
   }
 
   function renderSyncReceivedPreview() {
@@ -5312,12 +5422,12 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     };
   }
 
-  async function applyReceivedSyncData() {
+  async function applyReceivedSyncData(modeOverride = null, skipNativeConfirm = false) {
     const payload = syncRuntime.receivedPayload;
     if (!payload) return;
-    const mode = $('#syncReceiveMode')?.value || syncRuntime.receiveMode || 'merge';
+    const mode = modeOverride || $('#syncReceiveMode')?.value || syncRuntime.receiveMode || 'merge';
     syncRuntime.receiveMode = mode;
-    if (!confirm(mode === 'replace' ? 'Substituir todos os dados deste aparelho pela base recebida?' : 'Mesclar a base recebida com os dados deste aparelho?')) return;
+    if (!skipNativeConfirm && !confirm(mode === 'replace' ? 'Substituir todos os dados deste aparelho pela base recebida?' : 'Mesclar a base recebida com os dados deste aparelho?')) return;
     syncSetStatus('receiving', 'Criando ponto de restauração antes de aplicar...', 100);
     try { await createInternalSnapshot('antes da sincronização', true); } catch {}
     if (mode === 'replace') {
@@ -5337,7 +5447,8 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     syncRuntime.message = `Dados aplicados: ${number(state.reports.length)} relatórios e ${number(Object.keys(state.productCosts || {}).length)} custos neste aparelho.`;
     try { syncRuntime.channel?.send(JSON.stringify({ kind: 'jb3d-ack', reports: state.reports.length, costs: Object.keys(state.productCosts || {}).length })); } catch {}
     renderAll();
-    setGrowthSection('sync', false);
+    switchTab('imports');
+    setUiSection('imports', 'sync', false);
     syncSetStatus('success', syncRuntime.message, 100);
     createInternalSnapshot('após sincronização', true).catch(() => {});
     toast('Dados sincronizados neste dispositivo.', 'success');
@@ -5479,6 +5590,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
       syncRuntime.scanCallback = null;
       closeSyncQrScanner();
       if (callback) callback(finalCode);
+      toast('Todos os QRs foram lidos. Confirme a próxima etapa.', 'success');
       return true;
     } catch (error) {
       const message = $('#syncQrCameraMessage');
@@ -5525,11 +5637,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     if(section==='audit')renderAuditCenter();
     if(section==='responses')renderResponseCenter();
     if(section==='backup')renderBackupCenter();
-    if(section==='sync')renderSyncCenter();
   }
 
   function setGrowthSection(section, scroll=true) {
-    const allowed=['today','compare','simulator','roas','calendar','audit','responses','backup','sync'];state.growthSection=allowed.includes(section)?section:'today';$$('[data-growth-section]').forEach(b=>b.classList.toggle('active',b.dataset.growthSection===state.growthSection));$$('.growth-pane').forEach(p=>p.classList.toggle('active',p.id===`growth-pane-${state.growthSection}`));renderGrowth();if(scroll)window.scrollTo({top:0,behavior:'auto'});
+    const allowed=['today','compare','simulator','roas','calendar','audit','responses','backup'];state.growthSection=allowed.includes(section)?section:'today';$$('[data-growth-section]').forEach(b=>b.classList.toggle('active',b.dataset.growthSection===state.growthSection));$$('.growth-pane').forEach(p=>p.classList.toggle('active',p.id===`growth-pane-${state.growthSection}`));renderGrowth();if(scroll)window.scrollTo({top:0,behavior:'auto'});
   }
 
   function openTaskAction(action,product) {
@@ -5547,6 +5658,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     state[key] = section;
     $$(`[data-ui-section^="${group}:"]`).forEach(button => button.classList.toggle('active', button.dataset.uiSection === `${group}:${section}`));
     $$(`[id^="${group}-pane-"]`).forEach(pane => pane.classList.toggle('active', pane.id === `${group}-pane-${section}`));
+    if (group === 'imports' && section === 'sync') renderSyncCenter();
     if (scroll) window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
@@ -5584,6 +5696,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 
   function renderAll() {
     renderDashboard(); renderGrowth(); renderImports(); renderSettings(); setPriceSection(state.priceSection);
+    if (state.importsSection === 'sync') renderSyncCenter();
     setUiSection('imports', state.importsSection, false); setUiSection('ad', state.adSection, false); setUiSection('settings', state.settingsSection, false);
   }
 
@@ -5739,9 +5852,9 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 
     const hosted = location.protocol === 'https:' || location.protocol === 'http:';
     if (hosted) {
-      iconLink.href = './icons/icon-192.png?v=3.5.0';
-      appleLink.href = './icons/icon-192.png?v=3.5.0';
-      manifestLink.href = './manifest.webmanifest?v=3.5.0';
+      iconLink.href = './icons/icon-192.png?v=3.6.0';
+      appleLink.href = './icons/icon-192.png?v=3.6.0';
+      manifestLink.href = './manifest.webmanifest?v=3.6.0';
       updateInstallUi();
       return;
     }
@@ -5814,10 +5927,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     Promise.all([
       navigator.serviceWorker.getRegistrations().then(regs => Promise.all(regs.map(reg => {
         const url = reg.active?.scriptURL || reg.waiting?.scriptURL || reg.installing?.scriptURL || '';
-        return url.includes('sw-v3.5.js') ? Promise.resolve() : reg.unregister();
+        return url.includes('sw-v3.6.js') ? Promise.resolve() : reg.unregister();
       }))),
-      ('caches' in window ? caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jb3d-vendas-') && key !== 'jb3d-vendas-v3.5.0').map(key => caches.delete(key)))) : Promise.resolve())
-    ]).finally(() => navigator.serviceWorker.register('./sw-v3.5.js?v=3.5.0', { scope: './', updateViaCache: 'none' }).catch(() => {}));
+      ('caches' in window ? caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jb3d-vendas-') && key !== 'jb3d-vendas-v3.6.0').map(key => caches.delete(key)))) : Promise.resolve())
+    ]).finally(() => navigator.serviceWorker.register('./sw-v3.6.js?v=3.6.0', { scope: './', updateViaCache: 'none' }).catch(() => {}));
   }
 
   function updateScrollUi() {
@@ -5923,9 +6036,14 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
       if (event.target.closest('#syncDownloadQr')) { downloadSyncQr(); return; }
       if (event.target.closest('#syncPasteSignal')) { promptSyncCode(); return; }
       if (event.target.closest('#syncCancel') || event.target.closest('#syncCancelWaiting')) { try { syncRuntime.channel?.send(JSON.stringify({kind:'jb3d-cancel'})); } catch {} resetSyncSession(); return; }
-      if (event.target.closest('#syncApplyReceived')) { applyReceivedSyncData(); return; }
+      if (event.target.closest('#syncApplyReceived')) { openReceivedDataConfirmModal(); return; }
       if (event.target.closest('#syncDiscardReceived')) { syncRuntime.receivedPayload=null; syncSetStatus('connected','Dados recebidos descartados. Você pode reiniciar a sincronização.',0); return; }
       if (event.target.closest('[data-close-sync-scanner]')) { closeSyncQrScanner(); return; }
+      if (event.target.closest('[data-close-sync-confirm]')) { closeSyncConfirmModal(true); return; }
+      if (event.target.closest('#syncConfirmSignalProceed')) { confirmPendingSyncSignal(); return; }
+      if (event.target.closest('#syncConfirmApplyData')) { const mode=document.querySelector('input[name="syncApplyMode"]:checked')?.value==='replace'?'replace':'merge'; closeSyncConfirmModal(false); applyReceivedSyncData(mode,true); return; }
+      if (event.target.closest('#syncConfirmLater')) { closeSyncConfirmModal(false); syncSetStatus('review','Base recebida. Use o botão Aplicar dados quando estiver pronto.',100); return; }
+      if (event.target.closest('#syncConfirmDiscardData')) { closeSyncConfirmModal(false); syncRuntime.receivedPayload=null; syncSetStatus('connected','Dados recebidos descartados. Você pode reiniciar a sincronização.',0); return; }
       if (event.target.closest('#syncQrToggleManual')) { const box=$('#syncQrManualBox'); if(box)box.hidden=!box.hidden; return; }
       if (event.target.closest('#syncQrUseManual')) { const code=$('#syncQrManualInput')?.value.trim(); if(!code)return toast('Cole o código de sincronização.','error'); completeSyncQrScan(code); return; }
       const productRow = event.target.closest('.product-card, .product-preview-item');
@@ -6053,7 +6171,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     detectDeviceLayout(); loadState(); migrateStoredReports(); loadAdFields(); ensureProductModal(); ensureSyncQrScannerModal(); renderAll(); renderSeasonalOpportunities(); bindEvents(); bindResponsiveLayout(); bindScrollExperience(); setupInstallAssets(); registerPwaServiceWorker();
     hydrateProductCostsFromDatabase().then(changed => { if (changed) { renderDashboard(); renderGrowth(); } });
     if (!state.growth.lastInternalBackup || Date.now()-Date.parse(state.growth.lastInternalBackup)>86400000) queueAutomaticSnapshot('backup automático diário');
-    $('#xlsxStatus').textContent = window.XLSX && window.fflate ? 'v3.5 · QR sequencial ilimitado' : 'Erro no leitor';
+    $('#xlsxStatus').textContent = window.XLSX && window.fflate ? 'v3.6 · sincronização confirmada em Importar' : 'Erro no leitor';
     window.addEventListener('pagehide', () => { stopSyncQrScanner(); closeSyncPeer(); }, { once: true });
   }
 

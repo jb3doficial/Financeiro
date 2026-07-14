@@ -1,29 +1,15 @@
-JB3D VENDAS v3.5 — QRS SEQUENCIAIS + SINCRONIZAÇÃO DIRETA
+JB3D Vendas v3.6 — sincronização confirmada
 
 PUBLICAÇÃO NO GITHUB PAGES
 1. Envie todos os arquivos e a pasta icons para a raiz do repositório.
-2. Aguarde o GitHub Pages concluir a publicação.
-3. Abra /limpar-cache.html uma vez para remover a versão antiga.
-4. No topo do app deve aparecer: v3.5 · QR sequencial ilimitado.
+2. Substitua os arquivos da versão anterior.
+3. Abra limpar-cache.html uma vez.
 
-COMO SINCRONIZAR
-1. Abra o aplicativo nos dois dispositivos. Preferencialmente, conecte ambos ao mesmo Wi-Fi.
-2. No aparelho com os dados atualizados, abra Gestão > Sincronizar > Enviar meus dados.
-3. O código de conexão será dividido automaticamente em vários QRs pequenos.
-4. No aparelho receptor, toque em Receber dados e mantenha a câmera apontada para a tela do emissor.
-5. Os QRs trocam automaticamente. A leitura aceita partes fora de ordem e ignora repetições.
-6. Quando atingir 100%, o receptor exibirá os QRs de resposta.
-7. No emissor, toque em Ler QR do outro aparelho e mantenha a câmera apontada até 100%.
-8. Aguarde a transferência dos dados e confirme Mesclar ou Espelhar/substituir.
+SINCRONIZAÇÃO
+A sincronização agora fica em Importar > Sincronizar.
+Após a câmera terminar de ler todos os QRs, o aplicativo abre uma janela de confirmação.
+No aparelho receptor é possível escolher Mesclar ou Substituir.
+No aparelho emissor é preciso confirmar o envio antes da transferência.
+Quando a base terminar de chegar, uma segunda janela mostra relatórios, custos e respostas recebidas antes de aplicar.
 
-IMPORTANTE
-- O tamanho do código de pareamento não é mais limitado a um único QR.
-- O aplicativo cria quantas partes forem necessárias.
-- Cada parte possui numeração e verificação contra erro de leitura.
-- O QR é usado no pareamento; relatórios, custos e configurações são enviados diretamente entre os navegadores por WebRTC.
-- Se a rede local bloquear a conexão, reinicie e desmarque Usar somente a rede local.
-
-SE A CÂMERA NÃO ABRIR
-- Confirme a permissão de câmera no navegador.
-- Use o endereço HTTPS do GitHub Pages.
-- Também é possível selecionar fotos dos QRs ou colar o código completo manualmente.
+Mantenha os dois aparelhos abertos e, de preferência, na mesma rede Wi-Fi.
