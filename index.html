@@ -28,7 +28,7 @@
   document.documentElement.style.setProperty('--visual-height',h+'px');
 })();
 </script>
-<title>JB3D Vendas v3.2</title>
+<title>JB3D Vendas v3.3</title>
 <style>
     :root {
       --bg:#080d18; --panel:#101827; --panel2:#151f31; --line:#253149; --text:#f4f7fb;
@@ -372,6 +372,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 /* ===== v3.1 — atualização diária e análises gráficas ===== */
 .daily-update-card{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:15px;margin-bottom:13px;border:1px solid rgba(56,232,198,.2);border-radius:20px;background:linear-gradient(135deg,rgba(56,232,198,.10),rgba(82,168,255,.07))}.daily-update-card:before{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-48px;top:-72px;background:rgba(56,232,198,.09);filter:blur(2px)}.daily-update-main{position:relative;min-width:0}.daily-update-main>small{display:block;color:var(--accent);font-size:8px;font-weight:900;letter-spacing:.12em}.daily-update-main h2{margin:4px 0 5px;font-size:15px}.daily-update-main p{margin:0;color:var(--muted);font-size:9px;line-height:1.45}.daily-source-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.daily-source{display:inline-flex;align-items:center;gap:5px;padding:6px 8px;border-radius:99px;border:1px solid var(--line);background:rgba(8,15,26,.42);color:var(--muted);font-size:8px;font-weight:850}.daily-source i{width:7px;height:7px;border-radius:50%;background:var(--danger);box-shadow:0 0 0 3px rgba(255,102,126,.08)}.daily-source.ok{color:#c9f1dc;border-color:rgba(72,215,137,.2);background:rgba(72,215,137,.07)}.daily-source.ok i{background:var(--good);box-shadow:0 0 0 3px rgba(72,215,137,.08)}.daily-update-action{position:relative;text-align:right}.daily-update-action b{display:block;font-size:22px;color:var(--accent)}.daily-update-action span{display:block;margin:2px 0 9px;color:var(--muted);font-size:8px}.daily-update-action .button{padding:10px 12px;font-size:9px}.daily-last-base{margin-top:7px;color:var(--muted);font-size:8px}
 .chart-legend-inline{display:flex;gap:12px;align-items:center;margin:0 0 7px 2px}.chart-legend-inline span{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:8px}.chart-legend-inline i{width:14px;height:3px;border-radius:99px;background:var(--accent)}.chart-legend-inline i.profit{background:var(--good)}.chart-legend-inline i.secondary{background:var(--accent2)}.chart-legend-inline i.ads{background:var(--warn)}.chart-legend-inline i.products{background:#ae78ff}.financial-line-sales{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 3px 5px rgba(56,232,198,.16));stroke-dasharray:900;stroke-dashoffset:900;animation:drawLine 1s ease forwards}.financial-line-ads{fill:none;stroke:var(--warn);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:drawLine 1s .08s ease forwards}.financial-line-products{fill:none;stroke:#ae78ff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:drawLine 1s .16s ease forwards}.financial-line-profit{fill:none;stroke:var(--good);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 3px 5px rgba(72,215,137,.16));stroke-dasharray:900;stroke-dashoffset:900;animation:drawLine 1s .24s ease forwards}.financial-dot-sales{fill:#081522;stroke:var(--accent);stroke-width:2}.financial-dot-ads{fill:#081522;stroke:var(--warn);stroke-width:1.8}.financial-dot-products{fill:#081522;stroke:#ae78ff;stroke-width:1.8}.financial-dot-profit{fill:#081522;stroke:var(--good);stroke-width:2}.financial-summary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.financial-summary-item{padding:11px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.024)}.financial-summary-item small{display:block;color:var(--muted);font-size:7px}.financial-summary-item b{display:block;margin-top:6px;font-size:13px}.financial-summary-item.sales b{color:var(--accent)}.financial-summary-item.ads b{color:var(--warn)}.financial-summary-item.products b{color:#c9a7ff}.financial-summary-item.profit b{color:var(--good)}.financial-summary-item.profit.negative b{color:var(--danger)}@media(min-width:760px){.financial-summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}.chart-profit-line{fill:none;stroke:var(--good);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:drawLine 1.1s .12s ease forwards;filter:drop-shadow(0 3px 4px rgba(72,215,137,.16))}.chart-profit-dot{fill:#081522;stroke:var(--good);stroke-width:2}.chart-zero-line{stroke:rgba(255,255,255,.24);stroke-width:1;stroke-dasharray:4 5}.analysis-bar-chart{position:relative;height:260px}.analysis-tooltip{position:absolute;z-index:9;min-width:160px;padding:10px 12px;border-radius:14px;background:rgba(7,16,29,.98);border:1px solid rgba(82,168,255,.28);box-shadow:0 14px 34px rgba(0,0,0,.4);transform:translate(-50%,calc(-100% - 12px));opacity:0;visibility:hidden;pointer-events:none;transition:.16s}.analysis-tooltip.show{opacity:1;visibility:visible;transform:translate(-50%,calc(-100% - 16px))}.analysis-tooltip small{display:block;color:var(--muted);font-size:8px;font-weight:850;margin-bottom:7px}.analysis-tooltip div{display:flex;justify-content:space-between;gap:18px;font-size:10px}.analysis-tooltip div+div{margin-top:5px}.analysis-tooltip span{color:var(--muted)}.analysis-tooltip b{font-size:10px}.analysis-hit{fill:transparent;cursor:pointer}.orders-bar{fill:var(--accent2);rx:3}.units-bar{fill:var(--accent);rx:3}.ad-sales-bar{fill:var(--accent);rx:3}.ad-spend-bar{fill:var(--warn);rx:3}.weekday-bar-sales{fill:var(--accent2);rx:4}.weekday-bar-profit{fill:var(--good);rx:4}.chart-insights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.chart-insight{padding:11px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.023)}.chart-insight small{display:block;color:var(--muted);font-size:7px}.chart-insight b{display:block;margin-top:6px;font-size:12px}.chart-insight span{display:block;margin-top:4px;color:var(--muted);font-size:8px;line-height:1.4}.funnel-wrap{display:grid;gap:9px;padding:7px 0}.funnel-stage{position:relative;margin:auto;padding:12px 14px;border-radius:12px;text-align:center;background:linear-gradient(135deg,rgba(82,168,255,.18),rgba(56,232,198,.1));border:1px solid rgba(82,168,255,.18);min-width:45%}.funnel-stage strong{display:block;font-size:16px}.funnel-stage small{display:block;margin-top:3px;color:var(--muted);font-size:8px}.funnel-arrow{text-align:center;color:var(--muted);font-size:9px}.funnel-rates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:13px}.funnel-rate{padding:10px;border-radius:13px;background:rgba(255,255,255,.025);border:1px solid var(--line);text-align:center}.funnel-rate small{display:block;color:var(--muted);font-size:7px}.funnel-rate b{display:block;margin-top:5px;font-size:12px}.chart-empty-note{display:grid;place-content:center;min-height:210px;text-align:center;color:var(--muted);font-size:10px;line-height:1.5}.chart-empty-note b{color:var(--text);font-size:13px;margin-bottom:5px}
+.chart-estimate-note{margin-top:9px;padding:9px 11px;border-radius:12px;background:rgba(255,189,89,.07);border:1px solid rgba(255,189,89,.16);color:var(--muted);font-size:9px;line-height:1.45}.chart-estimate-note b{color:var(--warn)}
 @media(min-width:760px){.daily-update-card{padding:18px 20px}.chart-insights{grid-template-columns:repeat(4,minmax(0,1fr))}.analysis-bar-chart{height:320px}}
 @media(max-width:520px){.daily-update-card{grid-template-columns:1fr}.daily-update-action{text-align:left;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:center}.daily-update-action b{grid-row:1/3}.daily-update-action .button{grid-column:1/-1;margin-top:5px}.funnel-rates{grid-template-columns:1fr}.chart-switcher{padding-bottom:3px}}
 
@@ -419,7 +420,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 <button class="chart-chip" data-graph-section="products">Produtos</button>
 </div>
 <section class="panel chart-card graph-pane active" id="graph-pane-sales"><div class="chart-head"><div><small>EVOLUÇÃO DIÁRIA</small><h2>Vendas e lucro estimado</h2></div><span id="salesChartTotal">R$ 0</span></div><div class="chart-legend-inline"><span><i></i>Vendas</span><span><i class="profit"></i>Lucro</span></div><div class="line-chart" id="salesChart"></div></section>
-<section class="panel chart-card graph-pane" id="graph-pane-financial"><div class="chart-head"><div><small>RESULTADO FINANCEIRO</small><h2>Vendas, ADS, produtos e lucro</h2></div><span id="financialChartMargin">Margem 0%</span></div><div class="chart-legend-inline"><span><i></i>Vendas</span><span><i class="ads"></i>ADS</span><span><i class="products"></i>Produtos</span><span><i class="profit"></i>Lucro</span></div><div class="analysis-bar-chart financial-line-chart" id="financialFlowChart"></div><div class="financial-summary-grid" id="financialFlowSummary"></div></section>
+<section class="panel chart-card graph-pane" id="graph-pane-financial"><div class="chart-head"><div><small>RESULTADO FINANCEIRO</small><h2>Vendas, ADS, produtos e lucro</h2></div><span id="financialChartMargin">Margem 0%</span></div><div class="chart-legend-inline"><span><i></i>Vendas</span><span><i class="ads"></i>ADS</span><span><i class="products"></i>Produtos</span><span><i class="profit"></i>Lucro</span></div><div class="analysis-bar-chart financial-line-chart" id="financialFlowChart"></div><div class="financial-summary-grid" id="financialFlowSummary"></div><div class="chart-estimate-note" id="financialAllocationNote" hidden></div></section>
 <section class="panel chart-card graph-pane" id="graph-pane-orders"><div class="chart-head"><div><small>VOLUME</small><h2>Pedidos e itens por dia</h2></div><span id="ordersChartTotal">0 pedidos</span></div><div class="chart-legend-inline"><span><i class="secondary"></i>Pedidos</span><span><i></i>Itens</span></div><div class="analysis-bar-chart" id="ordersChart"></div></section>
 <section class="panel chart-card graph-pane" id="graph-pane-ads"><div class="chart-head"><div><small>PUBLICIDADE</small><h2>Investimento e GMV por dia</h2></div><span id="adsChartRoas">ROAS 0</span></div><div class="chart-legend-inline"><span><i></i>GMV de anúncios</span><span><i style="background:var(--warn)"></i>Investimento</span></div><div class="analysis-bar-chart" id="adsChart"></div></section>
 <section class="panel chart-card graph-pane" id="graph-pane-funnel"><div class="chart-head"><div><small>CONVERSÃO</small><h2>Funil da loja</h2></div><span id="funnelConversion">0%</span></div><div id="funnelChart"></div></section>
@@ -578,7 +579,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 (() => {
   'use strict';
 
-  const APP_VERSION = '3.2.0';
+  const APP_VERSION = '3.3.0';
   const STORAGE_REPORTS = 'jb3d_vendas_reports_v2';
   const STORAGE_SETTINGS = 'jb3d_vendas_settings_v1';
   const STORAGE_AD = 'jb3d_vendas_ad_v1';
@@ -2124,12 +2125,34 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     const salesTotal = rows.reduce((t,d)=>t+(Number(d.sales)||0),0);
     const knownFees = rows.reduce((t,d)=>t+(Number(d.feeKnown)||0),0);
     const knownCosts = rows.reduce((t,d)=>t+(Number(d.productCostKnown)||0),0);
+    const knownAdSpend = rows.reduce((t,d)=>t+(Number(d.adSpend)||0),0);
+    const knownAdSales = rows.reduce((t,d)=>t+(Number(d.adSales)||0),0);
+    const knownImpressions = rows.reduce((t,d)=>t+(Number(d.impressions)||0),0);
+    const knownAdClicks = rows.reduce((t,d)=>t+(Number(d.adClicks)||0),0);
+    const knownAdOrders = rows.reduce((t,d)=>t+(Number(d.adOrders)||0),0);
     const residualFees = Math.max(0,(Number(finance.marketplaceFees)||0)-knownFees);
     const residualCosts = Math.max(0,(Number(finance.productCost)||0)-knownCosts);
+    const residualAdSpend = Math.max(0,(Number(metrics.adSpend)||0)-knownAdSpend);
+    const residualAdSales = Math.max(0,(Number(metrics.adSales)||0)-knownAdSales);
+    const residualImpressions = Math.max(0,(Number(metrics.impressions)||0)-knownImpressions);
+    const residualAdClicks = Math.max(0,(Number(metrics.clicks)||0)-knownAdClicks);
+    const residualAdOrders = Math.max(0, (metrics.products || []).reduce((t,p)=>t+(Number(p.adOrders)||0),0) - knownAdOrders);
+    const nonEmptyDays = rows.filter(day => (Number(day.sales)||0) > 0 || (Number(day.adSpend)||0) > 0);
+    const allocationDays = nonEmptyDays.length ? nonEmptyDays.length : Math.max(1, rows.length);
+    const useSalesWeight = salesTotal > 0;
+    metrics.dailyAdSpendEstimated = residualAdSpend > 0.005;
     rows.forEach(day => {
-      const ratio = salesTotal > 0 ? (Number(day.sales)||0)/salesTotal : 0;
-      day.marketplaceFees = (Number(day.feeKnown)||0) + residualFees*ratio;
-      day.productCost = (Number(day.productCostKnown)||0) + residualCosts*ratio;
+      const ratio = useSalesWeight ? (Number(day.sales)||0)/salesTotal : 1/allocationDays;
+      const fallbackRatio = !useSalesWeight && nonEmptyDays.length ? (nonEmptyDays.includes(day) ? 1/allocationDays : 0) : ratio;
+      const weight = useSalesWeight ? ratio : fallbackRatio;
+      day.marketplaceFees = (Number(day.feeKnown)||0) + residualFees*weight;
+      day.productCost = (Number(day.productCostKnown)||0) + residualCosts*weight;
+      if (residualAdSpend > 0) day.adSpend = (Number(day.adSpend)||0) + residualAdSpend*weight;
+      if (residualAdSales > 0) day.adSales = (Number(day.adSales)||0) + residualAdSales*weight;
+      if (residualImpressions > 0) day.impressions = (Number(day.impressions)||0) + residualImpressions*weight;
+      if (residualAdClicks > 0) day.adClicks = (Number(day.adClicks)||0) + residualAdClicks*weight;
+      if (residualAdOrders > 0) day.adOrders = (Number(day.adOrders)||0) + residualAdOrders*weight;
+      day.adSpendEstimated = metrics.dailyAdSpendEstimated && residualAdSpend*weight > 0;
       day.profit = (Number(day.sales)||0) - day.marketplaceFees - day.productCost - (Number(day.adSpend)||0);
       day.roas = day.adSpend > 0 ? day.adSales/day.adSpend : 0;
       day.ctr = day.impressions > 0 ? day.adClicks/day.impressions*100 : 0;
@@ -2466,6 +2489,11 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     const margin=Number(finance.margin)||0;
     $('#financialChartMargin').textContent=`Margem ${number(margin,1)}%`;
     summary.innerHTML=`<div class="financial-summary-item sales"><small>Vendas</small><b>${money(metrics.grossSales)}</b></div><div class="financial-summary-item ads"><small>Gasto com ADS</small><b>${money(metrics.adSpend)}</b></div><div class="financial-summary-item products"><small>Gasto de produto</small><b>${money(finance.productCost)}</b></div><div class="financial-summary-item profit ${finance.profit<0?'negative':''}"><small>Lucro estimado</small><b>${money(finance.profit)}</b></div>`;
+    const allocationNote = $('#financialAllocationNote');
+    if (allocationNote) {
+      allocationNote.hidden = !metrics.dailyAdSpendEstimated;
+      allocationNote.innerHTML = metrics.dailyAdSpendEstimated ? '<b>ADS distribuído por dia:</b> o relatório importado trouxe o gasto total do período, sem a data de cada anúncio. O aplicativo dividiu o total proporcionalmente às vendas diárias. O total permanece exatamente igual ao da visão geral.' : '';
+    }
   }
 
   function renderOrdersChart(daily,metrics) {
@@ -3723,8 +3751,8 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
         const url = reg.active?.scriptURL || reg.waiting?.scriptURL || reg.installing?.scriptURL || '';
         return url.includes('sw-v2.5.js') ? Promise.resolve() : reg.unregister();
       }))),
-      ('caches' in window ? caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jb3d-vendas-') && key !== 'jb3d-vendas-v3.2.0').map(key => caches.delete(key)))) : Promise.resolve())
-    ]).finally(() => navigator.serviceWorker.register('./sw-v3.2.js?v=3.2.0', { scope: './', updateViaCache: 'none' }).catch(() => {}));
+      ('caches' in window ? caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jb3d-vendas-') && key !== 'jb3d-vendas-v3.3.0').map(key => caches.delete(key)))) : Promise.resolve())
+    ]).finally(() => navigator.serviceWorker.register('./sw-v3.3.js?v=3.3.0', { scope: './', updateViaCache: 'none' }).catch(() => {}));
   }
 
   function updateScrollUi() {
@@ -3942,7 +3970,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     detectDeviceLayout(); loadState(); migrateStoredReports(); loadAdFields(); ensureProductModal(); renderAll(); renderSeasonalOpportunities(); bindEvents(); bindResponsiveLayout(); bindScrollExperience(); setupInstallAssets(); registerPwaServiceWorker();
     hydrateProductCostsFromDatabase().then(changed => { if (changed) { renderDashboard(); renderGrowth(); } });
     if (!state.growth.lastInternalBackup || Date.now()-Date.parse(state.growth.lastInternalBackup)>86400000) queueAutomaticSnapshot('backup automático diário');
-    $('#xlsxStatus').textContent = window.XLSX && window.fflate ? 'v3.2 · gráficos financeiros diários' : 'Erro no leitor';
+    $('#xlsxStatus').textContent = window.XLSX && window.fflate ? 'v3.3 · ADS diário corrigido' : 'Erro no leitor';
   }
 
   window.JB3DVendas = { parseFile, buildMetrics, buildRecommendations, buildFinancialEstimate, productFinancial, productMinimumRoas, auditProductData, getShopeeCommissionTier, commissionForAmount, solvePriceForRequiredNet, createInternalSnapshot, getState: () => state };
