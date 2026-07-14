@@ -28,7 +28,7 @@
   document.documentElement.style.setProperty('--visual-height',h+'px');
 })();
 </script>
-<title>JB3D Vendas v3.6</title>
+<title>JB3D Vendas v3.7</title>
 <style>
     :root {
       --bg:#080d18; --panel:#101827; --panel2:#151f31; --line:#253149; --text:#f4f7fb;
@@ -377,7 +377,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 @media(max-width:520px){.daily-update-card{grid-template-columns:1fr}.daily-update-action{text-align:left;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:center}.daily-update-action b{grid-row:1/3}.daily-update-action .button{grid-column:1/-1;margin-top:5px}.funnel-rates{grid-template-columns:1fr}.chart-switcher{padding-bottom:3px}}
 
 
-/* ===== v3.6 — sincronização confirmada dentro de Importar ===== */
+/* ===== v3.7 — sincronização direta por QRs, PC principal para celular ===== */
 .sync-hero{padding:16px;border-radius:20px;background:linear-gradient(145deg,rgba(56,232,198,.12),rgba(82,168,255,.07));border:1px solid rgba(56,232,198,.2);margin-bottom:13px}
 .sync-hero-top{display:grid;grid-template-columns:50px minmax(0,1fr);gap:12px;align-items:center}.sync-hero-icon{display:grid;place-items:center;width:50px;height:50px;border-radius:17px;background:linear-gradient(145deg,var(--accent),var(--accent2));color:#06131b;font-weight:950;font-size:22px;box-shadow:0 12px 28px rgba(56,232,198,.2)}.sync-hero strong{display:block;font-size:15px}.sync-hero p{margin:5px 0 0;color:var(--muted);font-size:10px;line-height:1.5}
 .sync-device-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:12px}.sync-device-grid>div{padding:10px;border-radius:13px;background:rgba(5,13,24,.42);border:1px solid rgba(132,158,198,.12);min-width:0}.sync-device-grid small{display:block;color:var(--muted);font-size:8px}.sync-device-grid b{display:block;margin-top:5px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -392,6 +392,7 @@ body,input,select,textarea,button{font-synthesis:none;text-rendering:optimizeLeg
 .qr-manual-box{margin-top:12px}.qr-manual-box textarea{width:100%;min-height:88px;border:1px solid var(--line);border-radius:13px;background:#07111e;color:var(--text);padding:10px;font-size:9px}.qr-modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.hidden-sync-file{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 .sync-qr-pager{display:grid;grid-template-columns:42px minmax(0,1fr) 42px;gap:8px;align-items:center;margin-top:9px}.sync-qr-page-btn{height:40px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035);color:var(--text);font-size:22px}.sync-qr-page-btn:disabled{opacity:.35}.sync-qr-page-copy{text-align:center}.sync-qr-page-copy b{display:block;font-size:12px;color:var(--accent)}.sync-qr-page-copy small{display:block;margin-top:3px;color:var(--muted);font-size:8px}.sync-auto-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;color:var(--muted);font-size:9px}.sync-auto-row input{accent-color:var(--accent)}.sync-multi-note{margin-top:8px;padding:9px;border-radius:12px;background:rgba(56,232,198,.07);border:1px solid rgba(56,232,198,.14);color:#d7f8f1;font-size:9px;line-height:1.45}.qr-multi-progress{margin-top:10px;padding:10px;border-radius:14px;background:rgba(56,232,198,.08);border:1px solid rgba(56,232,198,.18)}.qr-multi-progress[hidden]{display:none}.qr-multi-progress-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.qr-multi-progress-head strong{font-size:11px}.qr-multi-progress-head span{font-size:10px;color:var(--accent);font-weight:900}.qr-part-dots{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;max-height:58px;overflow:auto}.qr-part-dot{width:9px;height:9px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1)}.qr-part-dot.done{background:var(--good);border-color:var(--good);box-shadow:0 0 8px rgba(72,215,137,.35)}.qr-part-dot.current{outline:2px solid var(--accent2);outline-offset:2px}.sync-qr-box{position:relative}.sync-part-badge{position:absolute;top:8px;right:8px;z-index:3;padding:5px 8px;border-radius:99px;background:rgba(6,21,33,.86);color:#fff;font-size:8px;font-weight:900;box-shadow:0 5px 14px rgba(0,0,0,.2)}
 .sync-confirm-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:14px 0}.sync-confirm-summary>div{padding:11px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);min-width:0}.sync-confirm-summary small{display:block;color:var(--muted);font-size:8px}.sync-confirm-summary b{display:block;margin-top:5px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sync-confirm-choice{display:grid;gap:8px;margin-top:12px}.sync-confirm-choice label{display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025);cursor:pointer}.sync-confirm-choice input{margin-top:2px;accent-color:var(--accent)}.sync-confirm-choice strong{display:block;font-size:11px}.sync-confirm-choice small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.45}.sync-confirm-banner{padding:12px;border-radius:15px;background:linear-gradient(135deg,rgba(56,232,198,.11),rgba(82,168,255,.07));border:1px solid rgba(56,232,198,.18);margin-top:12px}.sync-confirm-banner strong{display:block;font-size:12px}.sync-confirm-banner small{display:block;margin-top:5px;color:var(--muted);font-size:9px;line-height:1.45}.sync-confirm-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.sync-confirm-actions .primary{grid-column:1/-1}.sync-confirm-actions .button{padding:12px 10px;font-size:10px}@media(max-width:460px){.sync-confirm-summary{grid-template-columns:1fr 1fr}.sync-confirm-summary>div:last-child{grid-column:1/-1}.sync-confirm-actions{grid-template-columns:1fr}.sync-confirm-actions .primary{grid-column:auto}}
+.sync-direct-banner{margin-top:12px;padding:13px;border-radius:16px;background:linear-gradient(135deg,rgba(56,232,198,.1),rgba(82,168,255,.07));border:1px solid rgba(56,232,198,.2)}.sync-direct-banner strong{display:block;font-size:12px}.sync-direct-banner small{display:block;margin-top:5px;color:var(--muted);font-size:9px;line-height:1.5}.sync-direction{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px;color:var(--muted);font-size:9px;font-weight:800}.sync-direction span{display:grid;place-items:center;width:27px;height:27px;border-radius:10px;background:rgba(56,232,198,.1);color:var(--accent)}.sync-qr-count{margin-top:8px;text-align:center;color:var(--accent);font-size:11px;font-weight:900}.sync-no-return{margin-top:9px;padding:9px 10px;border-radius:12px;background:rgba(72,215,137,.07);border:1px solid rgba(72,215,137,.15);color:#d8f8e8;font-size:9px;line-height:1.45}.sync-choice.primary-flow{border-color:rgba(56,232,198,.25);background:linear-gradient(145deg,rgba(56,232,198,.08),rgba(255,255,255,.02))}.sync-choice.receive.primary-flow{border-color:rgba(82,168,255,.27);background:linear-gradient(145deg,rgba(82,168,255,.08),rgba(255,255,255,.02))}
 @media(max-width:720px){.sync-choice-grid,.sync-options{grid-template-columns:1fr}.sync-qr-wrap{grid-template-columns:1fr}.sync-qr-box{min-height:240px}.sync-guide{grid-template-columns:1fr}.sync-device-grid,.sync-received-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.sync-actions{grid-template-columns:1fr 1fr}}
 @media(max-width:390px){.sync-device-grid,.sync-received-grid{grid-template-columns:1fr 1fr}.sync-device-grid>div:last-child,.sync-received-grid>div:last-child{grid-column:1/-1}.sync-actions{grid-template-columns:1fr}.sync-actions .button.full-row{grid-column:auto}}
 </style>
@@ -1884,7 +1885,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 (() => {
   'use strict';
 
-  const APP_VERSION = '3.6.0';
+  const APP_VERSION = '3.7.0';
   const STORAGE_REPORTS = 'jb3d_vendas_reports_v2';
   const STORAGE_SETTINGS = 'jb3d_vendas_settings_v1';
   const STORAGE_AD = 'jb3d_vendas_ad_v1';
@@ -1911,9 +1912,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 
 
   const SYNC_SIGNAL_PREFIX = 'JB3D-SYNC-1.';
+  const SYNC_DATA_PREFIX = 'JB3D-DATA-1.';
   const SYNC_MULTI_QR_PREFIX = 'JB3D-MQR-2.';
   const SYNC_QR_PART_SIZE = 620;
-  const SYNC_QR_ROTATE_MS = 1450;
+  const SYNC_QR_ROTATE_MS = 1150;
   const SYNC_CHUNK_SIZE = 24 * 1024;
   const syncRuntime = {
     pc: null, channel: null, role: null, sessionId: null, signalCode: '', status: 'idle',
@@ -1921,7 +1923,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     cameraStream: null, scanFrame: 0, scanBusy: false, detector: null, receivedPayload: null,
     receiveBuffer: null, sentBytes: 0, totalBytes: 0, lastPeer: '', sending: false,
     signalParts: [], signalPartIndex: 0, signalAuto: true, signalAutoTimer: 0,
-    qrAssembly: null, lastScannedCode: '', lastScannedAt: 0, pendingSignal: null, confirmKind: ''
+    qrAssembly: null, lastScannedCode: '', lastScannedAt: 0, pendingSignal: null, confirmKind: '', directQrMode: true, payloadSummary: null
   };
 
   let deferredInstallPrompt = null;
@@ -4945,6 +4947,53 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     return payload;
   }
 
+
+  function encodeDirectSyncPayload() {
+    const payload = snapshotPayload();
+    payload.sync = {
+      source: syncDeviceLabel(),
+      sentAt: new Date().toISOString(),
+      protocol: 'qr-direct-v1',
+      reports: Array.isArray(payload.reports) ? payload.reports.length : 0,
+      costs: Object.keys(payload.productCosts || {}).length
+    };
+    const raw = fflate.strToU8(JSON.stringify(payload));
+    const packed = fflate.gzipSync(raw, { level: 9 });
+    syncRuntime.payloadSummary = { rawBytes: raw.length, packedBytes: packed.length, reports: payload.sync.reports, costs: payload.sync.costs };
+    return SYNC_DATA_PREFIX + bytesToBase64Url(packed);
+  }
+
+  function decodeDirectSyncPayload(code) {
+    const clean = String(code || '').trim();
+    if (!clean.startsWith(SYNC_DATA_PREFIX)) throw new Error('Este QR não contém uma base direta do JB3D Vendas. Gere novamente no computador principal.');
+    const bytes = base64UrlToBytes(clean.slice(SYNC_DATA_PREFIX.length));
+    let payload;
+    try {
+      payload = JSON.parse(fflate.strFromU8(fflate.gunzipSync(bytes)));
+    } catch {
+      throw new Error('A sequência de QRs ficou incompleta ou corrompida. Reinicie a leitura.');
+    }
+    if (!payload || !Array.isArray(payload.reports) || typeof payload.productCosts !== 'object') throw new Error('A base lida não é válida.');
+    return payload;
+  }
+
+  function handleDirectSyncCode(code) {
+    try {
+      const payload = decodeDirectSyncPayload(code);
+      syncRuntime.receivedPayload = payload;
+      syncRuntime.lastPeer = payload.sync?.source || 'Computador principal';
+      syncRuntime.signalCode = '';
+      syncRuntime.signalParts = [];
+      stopSyncQrRotation();
+      syncSetStatus('review', `Base recebida de ${syncRuntime.lastPeer}. Confirme como aplicar.`, 100);
+      renderSyncReceivedPreview();
+      setTimeout(openReceivedDataConfirmModal, 120);
+    } catch (error) {
+      syncSetStatus('error', error.message || 'Não foi possível abrir a base recebida.');
+      toast(error.message || 'Falha ao ler os dados.', 'error');
+    }
+  }
+
   function syncRtcConfig(localOnly = true) {
     if (localOnly) return { iceServers: [], iceCandidatePoolSize: 0 };
     return { iceServers: [{ urls: ['stun:stun.l.google.com:19302', 'stun:stun1.l.google.com:19302'] }], iceCandidatePoolSize: 1 };
@@ -4976,18 +5025,13 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 
   function syncStatusPresentation() {
     const map = {
-      idle: ['Pronto para sincronizar', 'Escolha se este dispositivo enviará ou receberá os dados.', ''],
-      preparing: ['Preparando conexão', syncRuntime.message || 'Gerando o código de pareamento...', 'waiting'],
-      waiting_offer: ['Aguardando QR de envio', syncRuntime.message || 'Leia o QR mostrado no dispositivo que possui os dados.', 'waiting'],
-      waiting_answer: ['Aguardando resposta', syncRuntime.message || 'Mostre o QR ao outro dispositivo e depois leia a resposta.', 'waiting'],
-      answer_ready: ['Resposta pronta', syncRuntime.message || 'Mostre este QR ao dispositivo que está enviando.', 'waiting'],
-      connecting: ['Conectando', syncRuntime.message || 'Estabelecendo a conexão direta entre os aparelhos...', 'waiting'],
-      connected: ['Dispositivos conectados', syncRuntime.message || 'A conexão direta foi estabelecida.', 'connected'],
-      sending: ['Enviando dados', syncRuntime.message || 'Mantenha os dois dispositivos nesta tela.', 'connected'],
-      receiving: ['Recebendo dados', syncRuntime.message || 'Mantenha os dois dispositivos nesta tela.', 'connected'],
+      idle: ['Pronto para sincronizar', 'No computador principal, gere os QRs. No celular, leia a sequência para importar.', ''],
+      preparing: ['Preparando a base', syncRuntime.message || 'Compactando relatórios e custos...', 'waiting'],
+      qr_export: ['QRs prontos no computador', syncRuntime.message || 'No celular, toque em Ler QRs e mantenha a câmera apontada.', 'waiting'],
+      waiting_offer: ['Câmera pronta no celular', syncRuntime.message || 'Aponte para os QRs exibidos no computador principal.', 'waiting'],
       review: ['Dados recebidos', syncRuntime.message || 'Revise e confirme como deseja aplicar os dados.', 'connected'],
       success: ['Sincronização concluída', syncRuntime.message || 'Os dados foram aplicados neste dispositivo.', 'connected'],
-      error: ['Não foi possível sincronizar', syncRuntime.message || 'Reinicie a conexão e tente novamente.', 'error']
+      error: ['Não foi possível sincronizar', syncRuntime.message || 'Reinicie a leitura e tente novamente.', 'error']
     };
     return map[syncRuntime.status] || map.idle;
   }
@@ -4996,29 +5040,27 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     const host = $('#syncCenter');
     if (!host) return;
     const costs = Object.keys(state.productCosts || {}).length;
-    const latest = state.reports.map(r => Date.parse(r.importedAt || 0)).filter(Number.isFinite).sort((a,b)=>b-a)[0];
-    host.innerHTML = `
-      <section class="panel app-panel">
-        <div class="panel-head app-panel-head"><div><small class="eyebrow">IMPORTAR ENTRE APARELHOS</small><h2>Sincronizar dispositivos</h2></div><span class="soft-badge">QRs sequenciais + rede</span></div>
-        <div class="sync-hero"><div class="sync-hero-top"><div class="sync-hero-icon">▦</div><div><strong>Copie os dados diretamente entre celular, tablet e computador</strong><p>O pareamento é dividido automaticamente em vários QRs leves. Basta manter a câmera apontada enquanto eles trocam; depois os dados seguem por conexão direta, sem nuvem.</p></div></div><div class="sync-device-grid"><div><small>Este dispositivo</small><b>${escapeHtml(syncDeviceLabel())}</b></div><div><small>Relatórios</small><b>${number(state.reports.length)}</b></div><div><small>Custos</small><b>${number(costs)}</b></div></div></div>
-        <div class="sync-choice-grid">
-          <button class="sync-choice" id="syncStartSend"><span class="sync-choice-icon">↑</span><strong>Enviar meus dados</strong><small>Use neste aparelho quando ele possui a base mais atualizada.</small></button>
-          <button class="sync-choice receive" id="syncStartReceive"><span class="sync-choice-icon">↓</span><strong>Receber dados</strong><small>Leia todos os QRs mostrados pelo aparelho que enviará a base.</small></button>
-        </div>
-        <div class="sync-options">
-          <div class="sync-option"><label><input type="checkbox" id="syncLocalOnly" ${syncRuntime.localOnly ? 'checked' : ''}> Usar somente a rede local</label><small>Recomendado quando os dois aparelhos estão conectados ao mesmo Wi-Fi.</small></div>
-          <div class="sync-option"><label>Como aplicar no aparelho que recebe</label><select id="syncReceiveMode"><option value="merge" ${syncRuntime.receiveMode === 'merge' ? 'selected' : ''}>Mesclar relatórios e custos</option><option value="replace" ${syncRuntime.receiveMode === 'replace' ? 'selected' : ''}>Espelhar e substituir tudo</option></select><small>Antes de aplicar, o app cria um ponto de restauração automático.</small></div>
-        </div>
-        <div class="sync-session" id="syncSessionPanel" ${syncRuntime.role || syncRuntime.status !== 'idle' ? '' : 'hidden'}>
-          <div class="sync-status-row"><span class="sync-status-dot" id="syncStatusDot"></span><div class="sync-status-copy"><strong id="syncStatusTitle">Pronto</strong><small id="syncStatusMessage"></small></div><span class="sync-role-badge" id="syncRoleBadge">—</span></div>
-          <div class="sync-progress" id="syncProgressWrap" hidden><div class="sync-progress-track"><div id="syncProgressBar"></div></div><small><span id="syncProgressLabel">0%</span><span id="syncProgressBytes"></span></small></div>
-          <div class="sync-qr-wrap" id="syncQrWrap" hidden><div><div class="sync-qr-box" id="syncQrBox"><span class="sync-part-badge" id="syncPartBadge" hidden></span><canvas id="syncQrCanvas"></canvas></div><div class="sync-qr-pager"><button class="sync-qr-page-btn" id="syncQrPrev" aria-label="QR anterior">‹</button><div class="sync-qr-page-copy"><b id="syncQrPartLabel">QR 1 de 1</b><small id="syncQrPartHint">Preparando...</small></div><button class="sync-qr-page-btn" id="syncQrNext" aria-label="Próximo QR">›</button></div><label class="sync-auto-row"><input type="checkbox" id="syncQrAuto" checked> Trocar QRs automaticamente</label></div><div class="sync-code-side"><small>O código foi dividido em partes leves. Mantenha a câmera do outro dispositivo apontada até completar 100%.</small><div class="sync-multi-note">As partes podem ser lidas fora de ordem e QRs repetidos são ignorados automaticamente.</div><textarea id="syncSignalText" readonly></textarea><div class="sync-actions"><button class="button secondary" id="syncScanOther">Ler QR do outro aparelho</button><button class="button ghost" id="syncCopySignal">Copiar código</button><button class="button ghost" id="syncDownloadQr">Salvar QR</button><button class="button danger" id="syncCancel">Cancelar</button></div></div></div>
-          <div class="sync-actions" id="syncWaitingActions" hidden><button class="button secondary full-row" id="syncScanOtherWaiting">Ler QR do outro aparelho</button><button class="button ghost" id="syncPasteSignal">Colar código manualmente</button><button class="button danger" id="syncCancelWaiting">Cancelar</button></div>
-          <div class="sync-received" id="syncReceivedPreview" hidden></div>
-        </div>
-        <div class="footer-note" style="margin-top:11px">Última alteração importada: ${latest ? new Date(latest).toLocaleString('pt-BR') : 'nenhuma'}. Mantenha os dois aparelhos com o aplicativo aberto. Após cada leitura completa, confirme a próxima etapa na janela exibida.</div>
-      </section>
-      <section class="panel app-panel"><div class="panel-head app-panel-head"><div><small class="eyebrow">COMO FUNCIONA</small><h2>Sincronização em 3 passos</h2></div></div><div class="sync-guide"><div class="sync-guide-step"><b>1</b><strong>Escolha quem envia</strong><small>No aparelho com os dados atualizados, toque em Enviar meus dados.</small></div><div class="sync-guide-step"><b>2</b><strong>Leia os dois QRs</strong><small>O aparelho que recebe mantém a câmera apontada e lê todos os QRs sequenciais. Depois mostra a resposta do mesmo modo.</small></div><div class="sync-guide-step"><b>3</b><strong>Confirme os dados</strong><small>Após ler todos os QRs, uma janela confirma se deseja mesclar, substituir ou cancelar.</small></div></div></section>`;
+    const latest = state.reports.reduce((max, report) => Math.max(max, Date.parse(report.importedAt || 0) || 0), 0);
+    const partCount = syncRuntime.signalParts.length || 0;
+    const packed = syncRuntime.payloadSummary?.packedBytes || 0;
+    host.innerHTML = `<section class="panel app-panel">
+      <div class="panel-head app-panel-head"><div><small class="eyebrow">PC PRINCIPAL → CELULAR</small><h2>Sincronizar por QRs</h2></div><span class="soft-badge">sem QR de resposta</span></div>
+      <div class="sync-hero"><div class="sync-hero-top"><div class="sync-hero-icon">▦</div><div><strong>O computador mostra e o celular lê</strong><p>A base inteira é compactada e dividida em QRs sequenciais. O celular apenas lê a sequência, confirma e atualiza os dados. Não precisa mostrar nenhum QR de volta ao computador.</p></div></div><div class="sync-device-grid"><div><small>Este dispositivo</small><b>${escapeHtml(syncDeviceLabel())}</b></div><div><small>Relatórios</small><b>${number(state.reports.length)}</b></div><div><small>Custos</small><b>${number(costs)}</b></div></div></div>
+      <div class="sync-choice-grid">
+        <button class="sync-choice primary-flow" id="syncStartSend"><span class="sync-choice-icon">▦</span><strong>Computador principal: gerar QRs</strong><small>Mostra toda a base deste aparelho em uma sequência automática de QRs.</small></button>
+        <button class="sync-choice receive primary-flow" id="syncStartReceive"><span class="sync-choice-icon">⌁</span><strong>Celular: ler QRs e receber</strong><small>Abre a câmera, acumula todas as partes e mostra a confirmação ao chegar em 100%.</small></button>
+      </div>
+      <div class="sync-options"><div class="sync-option"><label>Como aplicar no aparelho que recebe</label><select id="syncReceiveMode"><option value="merge" ${syncRuntime.receiveMode === 'merge' ? 'selected' : ''}>Mesclar relatórios e custos</option><option value="replace" ${syncRuntime.receiveMode === 'replace' ? 'selected' : ''}>Espelhar e substituir tudo</option></select><small>Antes de aplicar, o aplicativo cria um ponto de restauração automático.</small></div><div class="sync-option"><label>Fluxo recomendado</label><small>1. Gere no PC. 2. Leia no celular. 3. Confirme no celular. A atualização acontece imediatamente após a confirmação.</small></div></div>
+      <div class="sync-session" id="syncSessionPanel" ${syncRuntime.role || syncRuntime.status !== 'idle' ? '' : 'hidden'}>
+        <div class="sync-status-row"><span class="sync-status-dot" id="syncStatusDot"></span><div class="sync-status-copy"><strong id="syncStatusTitle">Pronto</strong><small id="syncStatusMessage"></small></div><span class="sync-role-badge" id="syncRoleBadge">—</span></div>
+        <div class="sync-progress" id="syncProgressWrap" hidden><div class="sync-progress-track"><div id="syncProgressBar"></div></div><small><span id="syncProgressLabel">0%</span><span id="syncProgressBytes"></span></small></div>
+        <div class="sync-qr-wrap" id="syncQrWrap" hidden><div><div class="sync-qr-box" id="syncQrBox"><span class="sync-part-badge" id="syncPartBadge" hidden></span><canvas id="syncQrCanvas"></canvas></div><div class="sync-qr-pager"><button class="sync-qr-page-btn" id="syncQrPrev" aria-label="QR anterior">‹</button><div class="sync-qr-page-copy"><b id="syncQrPartLabel">QR 1 de 1</b><small id="syncQrPartHint">Preparando...</small></div><button class="sync-qr-page-btn" id="syncQrNext" aria-label="Próximo QR">›</button></div><label class="sync-auto-row"><input type="checkbox" id="syncQrAuto" checked> Trocar QRs automaticamente</label><div class="sync-qr-count">${partCount ? `${number(partCount)} QR${partCount === 1 ? '' : 's'} · ${number(packed)} bytes compactados` : ''}</div></div><div class="sync-code-side"><small>No celular, abra esta mesma página e toque em <b>Celular: ler QRs e receber</b>. Mantenha a câmera apontada até completar 100%.</small><div class="sync-no-return">Não existe QR de resposta. Quando a leitura terminar, a janela de confirmação aparecerá diretamente no celular.</div><textarea id="syncSignalText" readonly></textarea><div class="sync-actions"><button class="button secondary" id="syncRestartQr">Reiniciar sequência</button><button class="button ghost" id="syncCopySignal">Copiar pacote</button><button class="button ghost" id="syncDownloadQr">Salvar QR atual</button><button class="button danger" id="syncCancel">Cancelar</button></div></div></div>
+        <div class="sync-actions" id="syncWaitingActions" hidden><button class="button secondary full-row" id="syncScanOtherWaiting">Abrir câmera e ler QRs</button><button class="button ghost" id="syncPasteSignal">Colar pacote manualmente</button><button class="button danger" id="syncCancelWaiting">Cancelar</button></div>
+        <div class="sync-received" id="syncReceivedPreview" hidden></div>
+      </div>
+      <div class="footer-note" style="margin-top:11px">Última alteração importada: ${latest ? new Date(latest).toLocaleString('pt-BR') : 'nenhuma'}. O recebimento funciona sem conexão entre os aparelhos: os próprios QRs carregam a base compactada.</div>
+    </section>
+    <section class="panel app-panel"><div class="panel-head app-panel-head"><div><small class="eyebrow">PASSO A PASSO</small><h2>Use o PC como principal</h2></div></div><div class="sync-guide"><div class="sync-guide-step"><b>1</b><strong>No computador</strong><small>Toque em Gerar QRs e deixe a sequência trocando automaticamente.</small></div><div class="sync-guide-step"><b>2</b><strong>No celular</strong><small>Toque em Ler QRs e mantenha a câmera apontada para o monitor.</small></div><div class="sync-guide-step"><b>3</b><strong>Confirme no celular</strong><small>Escolha mesclar ou substituir. O painel é recalculado imediatamente.</small></div></div></section>`;
     updateSyncSessionUi();
   }
 
@@ -5031,9 +5073,9 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     if (dot) dot.className = `sync-status-dot ${dotClass || ''}`;
     if ($('#syncStatusTitle')) $('#syncStatusTitle').textContent = title;
     if ($('#syncStatusMessage')) $('#syncStatusMessage').textContent = message;
-    if ($('#syncRoleBadge')) $('#syncRoleBadge').textContent = syncRuntime.role === 'sender' ? 'ENVIA' : syncRuntime.role === 'receiver' ? 'RECEBE' : 'PAREAMENTO';
+    if ($('#syncRoleBadge')) $('#syncRoleBadge').textContent = syncRuntime.role === 'sender' ? 'MOSTRA QRS' : syncRuntime.role === 'receiver' ? 'LÊ QRS' : 'PRONTO';
     const progressWrap = $('#syncProgressWrap');
-    const progressVisible = ['sending','receiving'].includes(syncRuntime.status) || syncRuntime.progress > 0;
+    const progressVisible = syncRuntime.status === 'review' || syncRuntime.progress > 0;
     if (progressWrap) progressWrap.hidden = !progressVisible;
     if ($('#syncProgressBar')) $('#syncProgressBar').style.width = `${syncRuntime.progress || 0}%`;
     if ($('#syncProgressLabel')) $('#syncProgressLabel').textContent = `${number(syncRuntime.progress || 0, 0)}%`;
@@ -5041,7 +5083,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     const qrWrap = $('#syncQrWrap');
     if (qrWrap) qrWrap.hidden = !syncRuntime.signalCode;
     const waitingActions = $('#syncWaitingActions');
-    if (waitingActions) waitingActions.hidden = !!syncRuntime.signalCode || !syncRuntime.role || ['sending','receiving','review','success'].includes(syncRuntime.status);
+    if (waitingActions) waitingActions.hidden = !!syncRuntime.signalCode || syncRuntime.role !== 'receiver' || ['review','success'].includes(syncRuntime.status);
     if ($('#syncSignalText')) $('#syncSignalText').value = syncRuntime.signalCode || '';
     if (syncRuntime.signalCode) {
       if (!syncRuntime.signalParts.length) prepareSyncSignalParts(true);
@@ -5085,7 +5127,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     Object.assign(syncRuntime, {
       role: null, sessionId: null, signalCode: '', status: 'idle', message: '', progress: 0,
       receivedPayload: null, receiveBuffer: null, sentBytes: 0, totalBytes: 0, lastPeer: '', sending: false,
-      signalParts: [], signalPartIndex: 0, qrAssembly: null, lastScannedCode: '', lastScannedAt: 0, pendingSignal: null, confirmKind: ''
+      signalParts: [], signalPartIndex: 0, qrAssembly: null, lastScannedCode: '', lastScannedAt: 0, pendingSignal: null, confirmKind: '', payloadSummary: null
     });
     stopSyncQrRotation();
     if (render && state.currentTab === 'imports' && state.importsSection === 'sync') renderSyncCenter();
@@ -5225,38 +5267,31 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
   }
 
   async function startSyncSend() {
-    if (!window.RTCPeerConnection) return toast('Este navegador não oferece conexão direta entre dispositivos.', 'error');
     resetSyncSession(false);
     syncRuntime.role = 'sender';
-    syncRuntime.sessionId = `s_${Date.now()}_${Math.random().toString(36).slice(2,8)}`;
-    syncRuntime.localOnly = $('#syncLocalOnly')?.checked !== false;
+    syncRuntime.signalAuto = true;
+    syncRuntime.sessionId = `qr_${Date.now()}_${Math.random().toString(36).slice(2,8)}`;
     syncRuntime.receiveMode = $('#syncReceiveMode')?.value || 'merge';
-    syncSetStatus('preparing', 'Criando o QR de envio...');
+    syncSetStatus('preparing', 'Compactando relatórios, custos e configurações...');
     try {
-      const pc = new RTCPeerConnection(syncRtcConfig(syncRuntime.localOnly));
-      syncRuntime.pc = pc;
-      setupSyncPeer(pc);
-      const channel = pc.createDataChannel('jb3d-sync', { ordered: true });
-      setupSyncChannel(channel, 'sender');
-      const offer = await pc.createOffer();
-      await pc.setLocalDescription(offer);
-      await waitForIceGathering(pc);
-      syncRuntime.signalCode = encodeSyncSignal(pc.localDescription, syncRuntime.sessionId);
+      await new Promise(resolve => setTimeout(resolve, 20));
+      syncRuntime.signalCode = encodeDirectSyncPayload();
       prepareSyncSignalParts(true);
-      syncSetStatus('waiting_answer', `No outro aparelho, leia os ${syncRuntime.signalParts.length} QR${syncRuntime.signalParts.length === 1 ? '' : 's'} sequenciais. Depois faça o mesmo com a resposta.`, 0);
+      syncSetStatus('qr_export', `Sequência pronta com ${syncRuntime.signalParts.length} QR${syncRuntime.signalParts.length === 1 ? '' : 's'}. No celular, abra a câmera do aplicativo e mantenha apontada para esta tela.`, 0);
+      renderSyncCenter();
+      toast('QRs prontos. Agora leia a sequência com o celular.', 'success');
     } catch (error) {
-      syncSetStatus('error', error.message || 'Não foi possível criar o pareamento.');
+      syncSetStatus('error', error.message || 'Não foi possível gerar os QRs.');
     }
   }
 
   async function startSyncReceive() {
-    if (!window.RTCPeerConnection) return toast('Este navegador não oferece conexão direta entre dispositivos.', 'error');
     resetSyncSession(false);
     syncRuntime.role = 'receiver';
-    syncRuntime.localOnly = $('#syncLocalOnly')?.checked !== false;
     syncRuntime.receiveMode = $('#syncReceiveMode')?.value || 'merge';
-    syncSetStatus('waiting_offer', 'Leia o QR de envio mostrado no outro dispositivo.');
-    openSyncQrScanner(code => handleSyncSignalCode(code));
+    syncSetStatus('waiting_offer', 'Aponte a câmera para a sequência exibida no computador principal.');
+    renderSyncCenter();
+    openSyncQrScanner(code => handleDirectSyncCode(code));
   }
 
   async function acceptSyncOffer(signal) {
@@ -5289,13 +5324,15 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
   }
 
   async function handleSyncSignalCode(code) {
+    const clean = String(code || '').trim();
+    if (clean.startsWith(SYNC_DATA_PREFIX)) { handleDirectSyncCode(clean); return; }
     try {
-      const signal = decodeSyncSignal(code);
+      const signal = decodeSyncSignal(clean);
       syncRuntime.pendingSignal = signal;
       openSyncSignalConfirmModal(signal);
     } catch (error) {
-      syncSetStatus('error', error.message || 'Não foi possível interpretar o QR.');
-      toast(error.message || 'QR inválido.', 'error');
+      syncSetStatus('error', 'Este código pertence ao método antigo. Gere novamente os QRs no computador usando a versão 3.7.');
+      toast('Gere uma nova sequência no computador principal.', 'error');
     }
   }
 
@@ -5451,8 +5488,8 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     setUiSection('imports', 'sync', false);
     syncSetStatus('success', syncRuntime.message, 100);
     createInternalSnapshot('após sincronização', true).catch(() => {});
-    toast('Dados sincronizados neste dispositivo.', 'success');
-    setTimeout(closeSyncPeer, 3000);
+    toast(`Atualizado: ${number(state.reports.length)} relatórios e ${number(Object.keys(state.productCosts || {}).length)} custos.`, 'success');
+    setTimeout(() => { renderAll(); renderSyncCenter(); }, 80);
   }
 
   function ensureSyncQrScannerModal() {
@@ -5462,7 +5499,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     modal.id = 'syncQrScannerModal';
     modal.className = 'product-modal';
     modal.hidden = true;
-    modal.innerHTML = `<div class="product-modal-backdrop" data-close-sync-scanner></div><section class="product-modal-sheet qr-scanner-sheet" role="dialog" aria-modal="true"><div class="modal-grabber"></div><div class="modal-head"><div><small>Sincronização</small><h2>Ler QR do outro aparelho</h2></div><button class="modal-close" data-close-sync-scanner aria-label="Fechar">×</button></div><div class="qr-scan-stage"><video id="syncQrVideo" muted playsinline></video><div class="qr-scan-frame"></div><div class="qr-camera-message" id="syncQrCameraMessage">Aponte a câmera para a sequência de QRs.</div></div><div class="qr-multi-progress" id="syncQrMultiProgress" hidden></div><div class="qr-modal-actions"><label class="button secondary" for="syncQrImageInput">Usar foto do QR</label><button class="button ghost" id="syncQrToggleManual">Colar código</button></div><input class="hidden-sync-file" id="syncQrImageInput" type="file" accept="image/*" capture="environment"><div class="qr-manual-box" id="syncQrManualBox" hidden><textarea id="syncQrManualInput" placeholder="Cole aqui o código completo ou uma parte JB3D-MQR..."></textarea><button class="button primary full" id="syncQrUseManual" style="margin-top:8px">Usar este código</button></div></section>`;
+    modal.innerHTML = `<div class="product-modal-backdrop" data-close-sync-scanner></div><section class="product-modal-sheet qr-scanner-sheet" role="dialog" aria-modal="true"><div class="modal-grabber"></div><div class="modal-head"><div><small>Sincronização</small><h2>Ler QRs do computador</h2></div><button class="modal-close" data-close-sync-scanner aria-label="Fechar">×</button></div><div class="qr-scan-stage"><video id="syncQrVideo" muted playsinline></video><div class="qr-scan-frame"></div><div class="qr-camera-message" id="syncQrCameraMessage">Aponte a câmera para os QRs exibidos no computador.</div></div><div class="qr-multi-progress" id="syncQrMultiProgress" hidden></div><div class="qr-modal-actions"><label class="button secondary" for="syncQrImageInput">Usar foto do QR</label><button class="button ghost" id="syncQrToggleManual">Colar código</button></div><input class="hidden-sync-file" id="syncQrImageInput" type="file" accept="image/*" capture="environment"><div class="qr-manual-box" id="syncQrManualBox" hidden><textarea id="syncQrManualInput" placeholder="Cole aqui o código completo ou uma parte JB3D-MQR..."></textarea><button class="button primary full" id="syncQrUseManual" style="margin-top:8px">Usar este código</button></div></section>`;
     document.body.appendChild(modal);
     return modal;
   }
@@ -5590,7 +5627,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
       syncRuntime.scanCallback = null;
       closeSyncQrScanner();
       if (callback) callback(finalCode);
-      toast('Todos os QRs foram lidos. Confirme a próxima etapa.', 'success');
+      toast('Base completa lida. Confirme como deseja aplicar.', 'success');
       return true;
     } catch (error) {
       const message = $('#syncQrCameraMessage');
@@ -5617,8 +5654,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
   }
 
   function promptSyncCode() {
-    const code = prompt('Cole o código de sincronização do outro dispositivo:');
-    if (code) handleSyncSignalCode(code);
+    const code = prompt('Cole o pacote completo JB3D-DATA ou uma parte JB3D-MQR:');
+    if (!code) return;
+    syncRuntime.scanCallback = finalCode => handleDirectSyncCode(finalCode);
+    completeSyncQrScan(code);
   }
 
   function downloadSyncQr() {
@@ -5927,10 +5966,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     Promise.all([
       navigator.serviceWorker.getRegistrations().then(regs => Promise.all(regs.map(reg => {
         const url = reg.active?.scriptURL || reg.waiting?.scriptURL || reg.installing?.scriptURL || '';
-        return url.includes('sw-v3.6.js') ? Promise.resolve() : reg.unregister();
+        return url.includes('sw-v3.7.js') ? Promise.resolve() : reg.unregister();
       }))),
-      ('caches' in window ? caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jb3d-vendas-') && key !== 'jb3d-vendas-v3.6.0').map(key => caches.delete(key)))) : Promise.resolve())
-    ]).finally(() => navigator.serviceWorker.register('./sw-v3.6.js?v=3.6.0', { scope: './', updateViaCache: 'none' }).catch(() => {}));
+      ('caches' in window ? caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jb3d-vendas-') && key !== 'jb3d-vendas-v3.7.0').map(key => caches.delete(key)))) : Promise.resolve())
+    ]).finally(() => navigator.serviceWorker.register('./sw-v3.7.js?v=3.7.0', { scope: './', updateViaCache: 'none' }).catch(() => {}));
   }
 
   function updateScrollUi() {
@@ -6029,8 +6068,9 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
       if (event.target.closest('#deleteSnapshots')) { deleteInternalSnapshots(); return; }
       if (event.target.closest('#syncStartSend')) { startSyncSend(); return; }
       if (event.target.closest('#syncStartReceive')) { startSyncReceive(); return; }
-      if (event.target.closest('#syncScanOther') || event.target.closest('#syncScanOtherWaiting')) { openSyncQrScanner(code => handleSyncSignalCode(code)); return; }
-      if (event.target.closest('#syncCopySignal')) { copyText(syncRuntime.signalCode, 'Código de sincronização'); return; }
+      if (event.target.closest('#syncScanOther') || event.target.closest('#syncScanOtherWaiting')) { syncRuntime.role='receiver'; syncSetStatus('waiting_offer','Aponte a câmera para a sequência exibida no computador principal.'); openSyncQrScanner(code => handleDirectSyncCode(code)); return; }
+      if (event.target.closest('#syncRestartQr')) { syncRuntime.signalPartIndex=0; syncRuntime.signalAuto=true; startSyncQrRotation(); updateSyncQrPartUi(); toast('Sequência reiniciada no QR 1.', 'success'); return; }
+      if (event.target.closest('#syncCopySignal')) { copyText(syncRuntime.signalCode, 'Pacote de sincronização'); return; }
       if (event.target.closest('#syncQrPrev')) { setSyncQrPart(syncRuntime.signalPartIndex - 1); return; }
       if (event.target.closest('#syncQrNext')) { setSyncQrPart(syncRuntime.signalPartIndex + 1); return; }
       if (event.target.closest('#syncDownloadQr')) { downloadSyncQr(); return; }
@@ -6045,7 +6085,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
       if (event.target.closest('#syncConfirmLater')) { closeSyncConfirmModal(false); syncSetStatus('review','Base recebida. Use o botão Aplicar dados quando estiver pronto.',100); return; }
       if (event.target.closest('#syncConfirmDiscardData')) { closeSyncConfirmModal(false); syncRuntime.receivedPayload=null; syncSetStatus('connected','Dados recebidos descartados. Você pode reiniciar a sincronização.',0); return; }
       if (event.target.closest('#syncQrToggleManual')) { const box=$('#syncQrManualBox'); if(box)box.hidden=!box.hidden; return; }
-      if (event.target.closest('#syncQrUseManual')) { const code=$('#syncQrManualInput')?.value.trim(); if(!code)return toast('Cole o código de sincronização.','error'); completeSyncQrScan(code); return; }
+      if (event.target.closest('#syncQrUseManual')) { const code=$('#syncQrManualInput')?.value.trim(); if(!code)return toast('Cole o pacote ou uma parte do QR.','error'); if(!syncRuntime.scanCallback) syncRuntime.scanCallback=finalCode=>handleDirectSyncCode(finalCode); completeSyncQrScan(code); return; }
       const productRow = event.target.closest('.product-card, .product-preview-item');
       if (productRow && !event.target.closest('input,select,button,label')) return openProductDetail(productRow.dataset.productKey);
     });
@@ -6171,7 +6211,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
     detectDeviceLayout(); loadState(); migrateStoredReports(); loadAdFields(); ensureProductModal(); ensureSyncQrScannerModal(); renderAll(); renderSeasonalOpportunities(); bindEvents(); bindResponsiveLayout(); bindScrollExperience(); setupInstallAssets(); registerPwaServiceWorker();
     hydrateProductCostsFromDatabase().then(changed => { if (changed) { renderDashboard(); renderGrowth(); } });
     if (!state.growth.lastInternalBackup || Date.now()-Date.parse(state.growth.lastInternalBackup)>86400000) queueAutomaticSnapshot('backup automático diário');
-    $('#xlsxStatus').textContent = window.XLSX && window.fflate ? 'v3.6 · sincronização confirmada em Importar' : 'Erro no leitor';
+    $('#xlsxStatus').textContent = window.XLSX && window.fflate ? 'v3.7 · PC principal → celular por QR' : 'Erro no leitor';
     window.addEventListener('pagehide', () => { stopSyncQrScanner(); closeSyncPeer(); }, { once: true });
   }
 
