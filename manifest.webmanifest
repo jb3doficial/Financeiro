@@ -1,0 +1,18 @@
+# JB3D Vendas v2.3 — GitHub Pages
+
+Envie **todos os arquivos e a pasta `icons`** para a raiz do repositório:
+
+- `index.html`
+- `manifest.webmanifest`
+- `service-worker.js`
+- pasta `icons`
+
+Depois, no GitHub, abra **Settings → Pages**, selecione **Deploy from a branch**, escolha a branch `main` e a pasta `/root`.
+
+O layout se adapta automaticamente:
+
+- Celular: navegação inferior e cartões compactos.
+- Tablet: métricas em grade e duas colunas.
+- Computador: menu lateral e painel amplo.
+
+Ao hospedar pelo GitHub Pages, o botão **Ajustes → Dados → Adicionar à tela inicial** poderá instalar o site como PWA em navegadores compatíveis.
