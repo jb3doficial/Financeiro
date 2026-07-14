@@ -1,0 +1,32 @@
+JB3D VENDAS v3.4 — QR + SINCRONIZAÇÃO DIRETA
+
+PUBLICAÇÃO NO GITHUB PAGES
+1. Envie todos os arquivos e a pasta icons para a raiz do repositório.
+2. Aguarde o GitHub Pages publicar.
+3. Abra /limpar-cache.html uma vez para remover a versão antiga.
+4. No topo do app deve aparecer: v3.4 · sincronização por QR e rede local.
+
+COMO SINCRONIZAR
+1. Abra o app nos dois dispositivos. Preferencialmente, conecte ambos ao mesmo Wi-Fi.
+2. No aparelho com a base mais atualizada, abra Gestão > Sincronizar > Enviar meus dados.
+3. No aparelho que receberá, abra Gestão > Sincronizar > Receber dados e leia o primeiro QR.
+4. O aparelho receptor exibirá um QR de resposta. Leia esse segundo QR no aparelho emissor.
+5. Aguarde a transferência. No receptor, revise e escolha Mesclar ou Espelhar/substituir.
+6. Confirme a aplicação dos dados.
+
+O QR é usado apenas para o pareamento. Os relatórios, custos e configurações passam diretamente entre os navegadores por uma conexão WebRTC.
+
+MODOS
+- Mesclar: preserva a base local, combina relatórios e custos, e usa a versão mais recente em períodos repetidos.
+- Espelhar/substituir: transforma o receptor em uma cópia do emissor.
+
+SEGURANÇA
+- Antes de aplicar a base recebida, o app cria um ponto de restauração automático.
+- Nenhum dado é enviado para um banco na nuvem.
+- Mantenha os dois aplicativos abertos até a confirmação.
+
+SE A CÂMERA NÃO ABRIR
+- Verifique a permissão de câmera do navegador.
+- Use “Usar foto do QR”.
+- Ou use “Copiar código” e cole manualmente no outro aparelho.
+- Se a conexão local falhar, reinicie e desmarque “Usar somente a rede local”.
