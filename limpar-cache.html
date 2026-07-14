@@ -1,32 +1,29 @@
-JB3D VENDAS v3.4 — QR + SINCRONIZAÇÃO DIRETA
+JB3D VENDAS v3.5 — QRS SEQUENCIAIS + SINCRONIZAÇÃO DIRETA
 
 PUBLICAÇÃO NO GITHUB PAGES
 1. Envie todos os arquivos e a pasta icons para a raiz do repositório.
-2. Aguarde o GitHub Pages publicar.
+2. Aguarde o GitHub Pages concluir a publicação.
 3. Abra /limpar-cache.html uma vez para remover a versão antiga.
-4. No topo do app deve aparecer: v3.4 · sincronização por QR e rede local.
+4. No topo do app deve aparecer: v3.5 · QR sequencial ilimitado.
 
 COMO SINCRONIZAR
-1. Abra o app nos dois dispositivos. Preferencialmente, conecte ambos ao mesmo Wi-Fi.
-2. No aparelho com a base mais atualizada, abra Gestão > Sincronizar > Enviar meus dados.
-3. No aparelho que receberá, abra Gestão > Sincronizar > Receber dados e leia o primeiro QR.
-4. O aparelho receptor exibirá um QR de resposta. Leia esse segundo QR no aparelho emissor.
-5. Aguarde a transferência. No receptor, revise e escolha Mesclar ou Espelhar/substituir.
-6. Confirme a aplicação dos dados.
+1. Abra o aplicativo nos dois dispositivos. Preferencialmente, conecte ambos ao mesmo Wi-Fi.
+2. No aparelho com os dados atualizados, abra Gestão > Sincronizar > Enviar meus dados.
+3. O código de conexão será dividido automaticamente em vários QRs pequenos.
+4. No aparelho receptor, toque em Receber dados e mantenha a câmera apontada para a tela do emissor.
+5. Os QRs trocam automaticamente. A leitura aceita partes fora de ordem e ignora repetições.
+6. Quando atingir 100%, o receptor exibirá os QRs de resposta.
+7. No emissor, toque em Ler QR do outro aparelho e mantenha a câmera apontada até 100%.
+8. Aguarde a transferência dos dados e confirme Mesclar ou Espelhar/substituir.
 
-O QR é usado apenas para o pareamento. Os relatórios, custos e configurações passam diretamente entre os navegadores por uma conexão WebRTC.
-
-MODOS
-- Mesclar: preserva a base local, combina relatórios e custos, e usa a versão mais recente em períodos repetidos.
-- Espelhar/substituir: transforma o receptor em uma cópia do emissor.
-
-SEGURANÇA
-- Antes de aplicar a base recebida, o app cria um ponto de restauração automático.
-- Nenhum dado é enviado para um banco na nuvem.
-- Mantenha os dois aplicativos abertos até a confirmação.
+IMPORTANTE
+- O tamanho do código de pareamento não é mais limitado a um único QR.
+- O aplicativo cria quantas partes forem necessárias.
+- Cada parte possui numeração e verificação contra erro de leitura.
+- O QR é usado no pareamento; relatórios, custos e configurações são enviados diretamente entre os navegadores por WebRTC.
+- Se a rede local bloquear a conexão, reinicie e desmarque Usar somente a rede local.
 
 SE A CÂMERA NÃO ABRIR
-- Verifique a permissão de câmera do navegador.
-- Use “Usar foto do QR”.
-- Ou use “Copiar código” e cole manualmente no outro aparelho.
-- Se a conexão local falhar, reinicie e desmarque “Usar somente a rede local”.
+- Confirme a permissão de câmera no navegador.
+- Use o endereço HTTPS do GitHub Pages.
+- Também é possível selecionar fotos dos QRs ou colar o código completo manualmente.

@@ -1,7 +1,7 @@
 {
   "name": "JB3D Vendas",
   "short_name": "JB3D",
-  "description": "Central offline de vendas, custos, anúncios, gráficos e sincronização direta por QR.",
+  "description": "Central offline de vendas, custos, anúncios, gráficos e sincronização por QRs sequenciais.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -10,12 +10,12 @@
   "theme_color": "#080d18",
   "icons": [
     {
-      "src": "icons/icon-192.png?v=3.4.0",
+      "src": "icons/icon-192.png?v=3.5.0",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png?v=3.4.0",
+      "src": "icons/icon-512.png?v=3.5.0",
       "sizes": "512x512",
       "type": "image/png"
     }
